@@ -1,0 +1,1044 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+    <Style id="corZD2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00aaff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="corZD">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00aaff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="corZD">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#corZD2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#corZD</styleUrl>
+		</Pair>
+	</StyleMap>
+  <Style id="s_ylw-pushpin">
+<IconStyle>
+<scale>1.1</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle>
+<PolyStyle>
+<fill>0</fill>
+</PolyStyle>
+  </Style>
+  <Style id="s_ylw-pushpin_hl">
+<IconStyle>
+<scale>1.3</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+</Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle>
+<PolyStyle>
+<fill>0</fill>
+</PolyStyle>
+  </Style>
+  <StyleMap id="corBranca">
+<Pair>
+<key>normal</key>
+<styleUrl>#s_ylw-pushpin</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+</Pair>
+  </StyleMap>
+    
+    
+    
+<Style id="sn_placemark_circle">
+		<IconStyle>
+			<color>4dffffff</color>
+			<scale>0.9</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+ <LabelStyle>
+			<scale>0.85</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<color>4dffffff</color>
+			<scale>1.06364</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+<LabelStyle>
+			<scale>0.85</scale>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+<Style id="corAzulAproximacao2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="corAzul">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#corAzulAproximacao2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#corAzulAproximacao</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="corAzulAproximacao">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+        
+        <Style id="corVerede2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="corVerde">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#corVerde1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#corVerede2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="corVerde1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff55</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+        
+        <StyleMap id="corRoxa">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#corRoxa1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#corRoxa2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="corRoxa1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="corRoxa2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+        
+        
+        
+        
+  <Folder>
+<name>2D</name>
+
+
+<Folder>
+            <name>HRP</name>
+        <Placemark>
+		<name>siji - 623,00m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+    <br>
+      
+      
+  
+
+ </div> ]]>
+                </description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.817194444444,-23.182388888889,0</coordinates>
+		</Point>
+	</Placemark>
+
+            
+</Folder>
+<Folder>
+            <name>FATO</name>
+        <Folder>
+                    <name>Linhas</name>
+<Placemark>
+<name>FATO 1</name>
+<styleUrl>#corBranca</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.817333333333,-23.18235,0.0 -45.81715,-23.182261111111,0.0 -45.817055555556,-23.182427777778,0.0 -45.817238888889,-23.182516666667,0.0 -45.817333333333,-23.18235,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+
+        </Folder>
+                  
+            
+</Folder>
+<Folder>
+            <name>TLOF</name>
+             <Folder>
+                    <name>Linhas</name>
+<Placemark>
+<name>TLOF 1</name>
+<styleUrl>#corBranca</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.817286111111,-23.182361111111,0.0 -45.817163888889,-23.182305555556,0.0 -45.817102777778,-23.182416666667,0.0 -45.817225,-23.182472222222,0.0 -45.817286111111,-23.182361111111,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+        </Folder>
+
+</Folder>
+<Folder>
+            <name>Área de Segurança</name>
+             <Folder>
+                    <name>Linhas</name>
+<Placemark>
+<name>Area de Segurança 1</name>
+<styleUrl>#corBranca</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.817380555556,-23.182336111111,0.0 -45.817136111111,-23.182219444444,0.0 -45.817008333333,-23.182441666667,0.0 -45.817252777778,-23.182558333333,0.0 -45.817380555556,-23.182336111111,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+
+
+        </Folder>
+        <Folder>
+                    <name>Legenda</name>
+
+
+<Placemark>
+		<name>623,00m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.817380555556,-23.182336111111,0</coordinates>
+		</Point>
+	</Placemark>
+
+        </Folder>  
+</Folder>
+
+
+
+
+
+
+
+
+
+<!--//aproximação-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+<Folder>
+            <name>Aproximação 01</name>
+             <Folder>
+                    <name>Linhas</name>
+
+<!--//desenha a primeira seção-->
+
+<Placemark>
+<name>Aproximação 1 seção 1</name>
+<styleUrl>#corAzul</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.817341666667,-23.182275,0.0 -45.817341666667,-23.182275,0.0 -45.819747222222,-23.18225,0.0 -45.819680555556,-23.182938888889,0.0 -45.817319444444,-23.182525,0.0 -45.817319444444,-23.182525,0.0 -45.817341666667,-23.182275,0.0   </coordinates>
+</LineString>
+
+
+</Placemark> 
+<Placemark>
+<name>Aproximação 1 seção 2</name>
+<styleUrl>#corAzul</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.819747222222,-23.182247222222,0.0 -45.820055555556,-23.182244444444,0.0 -45.820055555556,-23.182244444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.819680555556,-23.182941666667,0.0 -45.819747222222,-23.182247222222,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+<Placemark>
+<name>Aproximação 1 seção 3</name>
+<styleUrl>#corAzul</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.820055555556,-23.182244444444,0.0 -45.820055555556,-23.182244444444,0.0 -45.828258333333,-23.182916666667,0.0 -45.828186111111,-23.183666666667,0.0 -45.819983333333,-23.182994444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.820055555556,-23.182244444444,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+
+
+
+        </Folder>
+        <Folder>
+                    <name>Legenda</name>
+<Placemark>
+		<name>642,60m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Aproximação Primeira Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.819747222222,-23.18225,0</coordinates>
+		</Point>
+	</Placemark>
+
+
+<Placemark>
+		<name>646,54m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Aproximação Segunda Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.820055555556,-23.182244444444,0</coordinates>
+		</Point>
+	</Placemark>
+
+
+
+
+<Placemark>
+		<name>646,54m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Aproximação Terceira Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.828258333333,-23.182916666667,0</coordinates>
+		</Point>
+	</Placemark>
+
+
+
+
+
+        </Folder>  
+</Folder>
+<!--//verifica se tem a primeira seção e cria a pasta-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//zonaDesimpedida-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+
+
+<!--//decolagem-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+<Folder>
+            <name>Decolagem 01</name>
+             <Folder>
+                    <name>Linhas</name>
+//desenho primeira seção com verificações que definem se a pasta será criada 
+<Placemark>
+<name>Decolagem 1 seção 1</name>
+<styleUrl>#corVerde</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.817341666667,-23.182275,0.0 -45.817341666667,-23.182275,0.0 -45.819747222222,-23.18225,0.0 -45.819680555556,-23.182938888889,0.0 -45.817319444444,-23.182525,0.0 -45.817319444444,-23.182525,0.0 -45.817341666667,-23.182275,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+//verifica e desenha a segunda seção
+<Placemark>
+<name>Decolagem 1 seção 2</name>
+<styleUrl>#corVerde</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.819747222222,-23.182247222222,0.0 -45.820055555556,-23.182244444444,0.0 -45.820055555556,-23.182244444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.819680555556,-23.182941666667,0.0 -45.819747222222,-23.182247222222,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+//verifica e desenha a terceira seção
+<Placemark>
+<name>Decolagem 1 seção 3</name>
+<styleUrl>#corVerde</styleUrl>
+<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+
+<LineString>
+  <tessellate>1</tessellate>
+  <coordinates>-45.820055555556,-23.182244444444,0.0 -45.820055555556,-23.182244444444,0.0 -45.828205555556,-23.182911111111,0.0 -45.828133333333,-23.183661111111,0.0 -45.819983333333,-23.182994444444,0.0 -45.819983333333,-23.182994444444,0.0 -45.820055555556,-23.182244444444,0.0   </coordinates>
+</LineString>
+
+
+</Placemark>
+
+
+        </Folder>
+        <Folder>
+                    <name>Legenda</name>
+
+<Placemark>
+		<name>642,60m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Decolagem Primeira Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.819680555556,-23.182938888889,0</coordinates>
+		</Point>
+	</Placemark>
+
+<Placemark>
+		<name>647,33m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Decolagem Segunda Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.819983333333,-23.182994444444,0</coordinates>
+		</Point>
+	</Placemark>
+
+<Placemark>
+		<name>773,00m</name>
+		<description><![CDATA[   <div style="width:600;"> 
+  <br>
+  <h1>Decolagem Terceira Seção </h1><h2>petrobras - siji</h2>
+  <br>
+  <br>
+  
+     A1 - Denominação do Heliponto:  petrobras<br> 
+      
+   A2 - Código OACI:  siji <br>
+     A3 - HRP (Latitude):  23 10 56,60 S <br>
+         A4 - HRP (Longitude):   45 49 01,90 W <br> 
+      A5 - Elevação (m):  623,00 m <br>
+    A6 - Máxima dimensão do helicóptero crítico em operação (m):  11,90 m <br>
+    A7 - Diâmetro do rotor do helicóptero crítico em operação (m):  11,90 m <br>
+      A8 - Classe de performance do helicóptero crítico em operação:  2 <br> 
+    A9 - Tipo de operação : VFR  <br>
+    A10 - Período de operação: Diurno <br>
+    A11 - Tipo de Heliponto:  Solo <br>
+     A12 - Formato da FATO:  Quadrado <br>
+    A13 - Dimensões da FATO (comp.)  (m):  21,00m <br>
+    
+      A14 - Formato da TLOF:  Quadrado <br>
+      A15 - Dimensões da TLOF (comp.) (m):  14,00m <br>
+    
+    A16 - Dimensões da Área de Segurança Operacional (comp. ) (m):  28,00m <br>
+      
+  
+ </div> ]]></description>
+		<styleUrl>#msn_placemark_circle</styleUrl>
+		
+		<Point>
+			
+			<coordinates>-45.828133333333,-23.183661111111,0</coordinates>
+		</Point>
+	</Placemark>
+
+        </Folder>  
+</Folder>
+<!--//verifica se tem a primeira seção e cria a pasta-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+<!--//verifica se tem a primeira seção e cria a pasta-->
+
+<!--//transição-->
+<!--//verifica se tem a primeira e cria a pasta-->
+<!--//verifica se tem a primeira e cria a pasta-->
+<!--//verifica se tem a primeira e cria a pasta-->
+<!--//verifica se tem a primeira e cria a pasta-->
+   
+
+<!--//decolagem e aproximação em curva desenvolvendo--> 
+
+
+
+
+  </Folder>
+
+</Document>
+</kml>

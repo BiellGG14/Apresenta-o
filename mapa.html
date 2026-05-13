@@ -35,7 +35,7 @@
       <section class="map-toolbar" aria-label="Controles do mapa">
         <div class="map-title">
           <h1>Mapa do Sandbox</h1>
-          <p>Camadas de contexto, simulação, ruído e zonas de proteção no entorno do SBSJ.</p>
+          <p>Camadas úteis já separadas para OPEA e zonas de proteção no entorno do SBSJ.</p>
         </div>
 
         <div class="toolbar-actions">
@@ -50,15 +50,8 @@
           <div class="panel-heading">
             <div>
               <h2>Camadas</h2>
-              <p>Ative, filtre e centralize as frentes técnicas.</p>
+              <p>Dados úteis já separados para o mapa.</p>
             </div>
-          </div>
-
-          <div class="filter-bar" role="group" aria-label="Filtros de camadas">
-            <button type="button" class="is-active" data-filter="all">Todas</button>
-            <button type="button" data-filter="ambiente">Contexto</button>
-            <button type="button" data-filter="fase1">Atividades</button>
-            <button type="button" data-filter="riscos">Proteção</button>
           </div>
 
           <div id="layer-list" class="layer-list"></div>
@@ -70,6 +63,7 @@
             <div class="map-status-strip" aria-live="polite">
               <span class="map-badge" id="active-count">0 camadas ativas</span>
               <span class="map-badge" id="selected-layer-name">Foco: Zonas de proteção</span>
+              <span class="map-badge" id="map-load-state">Dados: aguardando</span>
               <span class="map-badge">Base cartográfica + satélite</span>
             </div>
           </section>
@@ -86,20 +80,15 @@
           </div>
         </div>
 
-        <div class="topic-grid">
+        <div class="topic-grid two-items">
           <article class="topic-card">
-            <h3>Ambiente operacional</h3>
-            <p>Meteorologia, espaço aéreo e topografia estruturam as restrições do sítio.</p>
-            <button class="ghost" type="button" data-story-layer="espaco-aereo">Abrir espaço aéreo</button>
-          </article>
-          <article class="topic-card">
-            <h3>Trajetórias</h3>
-            <p>A T6 está reservada para trajetórias, pontos simulados e envelopes quando houver dados validados.</p>
-            <button class="ghost" type="button" data-story-layer="desvios">Abrir desvios</button>
+            <h3>Obstáculos OPEA</h3>
+            <p>Feições derivadas do arquivo OPEA útil já separado para o entorno do SBSJ.</p>
+            <button class="ghost" type="button" data-story-layer="topografia">Abrir OPEA</button>
           </article>
           <article class="topic-card">
             <h3>Zonas de proteção</h3>
-            <p>A T12 integra geometria, risco e critérios regulatórios em superfícies de proteção.</p>
+            <p>PBZPH, PBZPA SBSJ e PZPANA SBSJ derivados para visualização no mapa.</p>
             <button class="ghost" type="button" data-story-layer="zonas-protecao">Abrir proteção</button>
           </article>
         </div>

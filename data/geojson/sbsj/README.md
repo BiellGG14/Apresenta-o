@@ -7,6 +7,7 @@ Esta pasta contém dados derivados para consumo direto do mapa interativo.
 - `data/02-Dados Geo/` é fonte bruta local.
 - O site não deve carregar arquivos diretamente dessa fonte bruta.
 - Arquivos usados no mapa devem ser convertidos, filtrados e salvos aqui.
+- Cópias dos arquivos originais úteis ficam em `originais/` para rastreabilidade.
 - O manifest `manifest.json` registra origem, destino e contagem de feições.
 
 ## Derivados atuais
@@ -15,6 +16,13 @@ Esta pasta contém dados derivados para consumo direto do mapa interativo.
 - `zonas/pbzph.geojson`: PBZPH derivado de KML.
 - `zonas/pbzpa_sbsj.geojson`: PBZPA SBSJ derivado de KMZ.
 - `zonas/pzpana_sbsj.geojson`: PZPANA SBSJ derivado de KMZ.
+
+## Originais úteis preservados
+
+- `originais/opeaSBSJ.kml`
+- `originais/pbzph.kml`
+- `originais/pbzpa_SBSJ.kmz`
+- `originais/pzpana_SBSJ.kmz`
 
 ## Como regenerar
 

@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-05-13T14:43:52",
+  "generatedAt": "2026-05-13T15:07:38",
   "sourceRoot": "data/02-Dados Geo",
   "note": "Arquivos derivados para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
+  "originalCopies": [
+    "data/geojson/sbsj/originais/opeaSBSJ.kml",
+    "data/geojson/sbsj/originais/pbzph.kml",
+    "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz",
+    "data/geojson/sbsj/originais/pzpana_SBSJ.kmz"
+  ],
   "items": [
     {
       "dataset": "OPEA SBSJ",

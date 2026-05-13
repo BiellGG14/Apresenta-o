@@ -427,6 +427,10 @@ button:hover {
   margin-top: 1rem;
 }
 
+.topic-grid.two-items {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .task-grid {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   margin-top: 1rem;
@@ -519,7 +523,7 @@ button:hover {
 .map-shell {
   display: grid;
   gap: 0.9rem;
-  width: min(1500px, calc(100% - 1.2rem));
+  width: min(1640px, calc(100% - 1.2rem));
   margin: 0 auto;
   padding: 0.9rem 0 1.2rem;
 }
@@ -547,7 +551,7 @@ button:hover {
 
 .map-workspace {
   display: grid;
-  grid-template-columns: 310px minmax(0, 1fr);
+  grid-template-columns: 430px minmax(0, 1fr);
   gap: 0.8rem;
   align-items: stretch;
 }
@@ -632,16 +636,16 @@ button:hover {
 .layer-list {
   display: grid;
   gap: 0.55rem;
-  max-height: calc(100vh - 330px);
-  min-height: 260px;
-  overflow: auto;
+  max-height: none;
+  min-height: 0;
+  overflow: visible;
   padding-right: 0.2rem;
 }
 
 .layer-card {
   display: grid;
-  grid-template-columns: 18px minmax(0, 1fr);
-  gap: 0.55rem;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 0.7rem;
   align-items: start;
   padding: 0.72rem;
   border: 1px solid var(--line);
@@ -655,8 +659,8 @@ button:hover {
 }
 
 .layer-card input {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   margin: 0.15rem 0 0;
   accent-color: var(--blue);
 }
@@ -664,13 +668,13 @@ button:hover {
 .layer-card h3 {
   margin: 0;
   color: var(--navy);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .layer-card p {
   margin: 0.2rem 0 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .layer-color {
@@ -1060,11 +1064,12 @@ select {
 
 @media (max-width: 1220px) {
   .map-workspace {
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 420px minmax(0, 1fr);
   }
 
   .layer-list {
-    max-height: 430px;
+    max-height: none;
+    overflow: visible;
   }
 
   .task-grid {
@@ -1089,6 +1094,7 @@ select {
   .executive-hero,
   .section-grid,
   .topic-grid,
+  .topic-grid.two-items,
   .timeline-grid,
   .report-layout,
   .report-reader,

@@ -9,6 +9,13 @@
   const layers = config.layers;
   const activeLayerIds = new Set();
   const layerGroups = new Map();
+  const layerLoadState = new Map();
+  const expectedGeoJsonLoads = new Map(
+    layers.map((layer) => [
+      layer.id,
+      layer.features.filter((feature) => feature.type === "geojson").length
+    ])
+  );
   let selectedLayerId = "zonas-protecao";
   let currentFilter = "all";
 
@@ -113,6 +120,49 @@
     };
   }
 
+  function updateLayerLoadState(layerId, state) {
+    const expected = expectedGeoJsonLoads.get(layerId) || 0;
+    const current = layerLoadState.get(layerId) || {
+      expected,
+      loaded: 0,
+      errors: 0,
+      started: 0,
+      state: "idle",
+      message: expected ? `carregando 0/${expected}` : "sem arquivo"
+    };
+
+    current.expected = expected;
+
+    if (state === "loading") {
+      current.started = Math.min(expected, current.started + 1);
+    }
+
+    if (state === "loaded") {
+      current.loaded = Math.min(expected, current.loaded + 1);
+    }
+
+    if (state === "error") {
+      current.errors = Math.min(expected, current.errors + 1);
+    }
+
+    const finished = current.loaded + current.errors;
+
+    if (current.errors && finished >= expected) {
+      current.state = "error";
+      current.message = `erro em ${current.errors}/${expected}`;
+    } else if (finished >= expected) {
+      current.state = "loaded";
+      current.message = `carregado ${current.loaded}/${expected}`;
+    } else {
+      current.state = "loading";
+      current.message = `carregando ${finished}/${expected}`;
+    }
+
+    layerLoadState.set(layerId, current);
+    renderLayerList();
+    updateStatus();
+  }
+
   function buildFeature(layer, feature) {
     const style = featureStyle(layer, feature);
 
@@ -163,6 +213,7 @@
 
     if (feature.type === "geojson") {
       const group = L.layerGroup();
+      updateLayerLoadState(layer.id, "loading");
       fetch(feature.url)
         .then((response) => {
           if (!response.ok) {
@@ -188,6 +239,7 @@
           });
 
           geoJsonLayer.addTo(group);
+          updateLayerLoadState(layer.id, "loaded");
 
           if (selectedLayerId === layer.id && activeLayerIds.has(layer.id)) {
             focusLayer(layer.id);
@@ -195,6 +247,7 @@
         })
         .catch((error) => {
           console.warn(error);
+          updateLayerLoadState(layer.id, "error");
         });
 
       return group;
@@ -389,16 +442,15 @@
       .map((layer) => {
         const checked = activeLayerIds.has(layer.id) ? "checked" : "";
         const selected = selectedLayerId === layer.id ? " is-selected" : "";
-        const progressClass = statusClass(layer.progress);
-        const width = progressWidth(layer.progress);
+        const loadState = layerLoadState.get(layer.id);
+        const loadText = loadState?.message ? ` · ${loadState.message}` : "";
 
         return `
           <article class="layer-card${selected}" data-layer-card="${escapeHtml(layer.id)}">
             <input type="checkbox" ${checked} aria-label="Ativar ${escapeHtml(layer.title)}" data-toggle-layer="${escapeHtml(layer.id)}">
             <div>
               <h3><span class="layer-color" style="background:${escapeHtml(layer.color)}"></span>${escapeHtml(layer.shortTitle)}</h3>
-              <p>${escapeHtml(layer.code)} · ${escapeHtml(layer.status)} · ${escapeHtml(layer.progress)}</p>
-              <div class="progress-bar ${progressClass}"><span style="width:${escapeHtml(width)}"></span></div>
+              <p>${escapeHtml(layer.code)} · ${escapeHtml(layer.status)} · ${escapeHtml(layer.progress)}${escapeHtml(loadText)}</p>
               <button type="button" data-focus-layer="${escapeHtml(layer.id)}">Ver no mapa</button>
             </div>
           </article>
@@ -457,6 +509,7 @@
   function updateStatus() {
     const activeCount = document.getElementById("active-count");
     const selectedName = document.getElementById("selected-layer-name");
+    const loadState = document.getElementById("map-load-state");
     const selected = layers.find((layer) => layer.id === selectedLayerId);
 
     if (activeCount) {
@@ -465,6 +518,13 @@
 
     if (selectedName && selected) {
       selectedName.textContent = `Foco: ${selected.shortTitle}`;
+    }
+
+    if (loadState) {
+      const selectedState = layerLoadState.get(selectedLayerId);
+      loadState.textContent = selectedState?.message
+        ? `Dados: ${selectedState.message}`
+        : "Dados: aguardando";
     }
   }
 

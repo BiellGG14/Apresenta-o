@@ -5,6 +5,7 @@ import datetime as dt
 import html
 import json
 import re
+import shutil
 import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -264,10 +265,17 @@ def main() -> None:
         convert_kml_to_geojson(source_root, output_root, "pzpana_SBSJ.kmz", "zonas/pzpana_sbsj.geojson", "PZPANA SBSJ", "zonas-protecao"),
     ]
 
+    original_root = output_root / "originais"
+    original_root.mkdir(parents=True, exist_ok=True)
+    original_files = ["opeaSBSJ.kml", "pbzph.kml", "pbzpa_SBSJ.kmz", "pzpana_SBSJ.kmz"]
+    for filename in original_files:
+        shutil.copy2(source_root / filename, original_root / filename)
+
     manifest = {
         "generatedAt": dt.datetime.now().isoformat(timespec="seconds"),
         "sourceRoot": "data/02-Dados Geo",
         "note": "Arquivos derivados para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
+        "originalCopies": [f"data/geojson/sbsj/originais/{filename}" for filename in original_files],
         "items": items,
     }
     (output_root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
