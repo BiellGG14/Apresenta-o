@@ -1,40 +1,44 @@
 {
-  "generatedAt": "2026-05-13T15:23:46",
+  "generatedAt": "2026-05-13T19:02:46",
   "sourceRoot": "data/02-Dados Geo",
-  "note": "Arquivos derivados para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
-  "originalCopies": [
-    "data/geojson/sbsj/originais/opeaSBSJ.kml",
-    "data/geojson/sbsj/originais/pbzph.kml",
-    "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz",
-    "data/geojson/sbsj/originais/pzpana_SBSJ.kmz"
-  ],
+  "note": "Arquivos KML/KMZ uteis promovidos para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
   "items": [
     {
       "dataset": "OPEA SBSJ",
       "source": "data/02-Dados Geo/opeaSBSJ.kml",
-      "target": "data/geojson/sbsj/obstaculos/opea_sbsj.geojson",
+      "target": "data/geojson/sbsj/originais/opeaSBSJ.kml",
       "category": "obstaculos",
-      "featureCount": 428
+      "format": "KML",
+      "featureCount": 428,
+      "bbox": [
+        -45.98,
+        -23.35,
+        -45.7,
+        -23.1
+      ]
     },
     {
       "dataset": "PBZPH",
       "source": "data/02-Dados Geo/pbzph.kml",
-      "target": "data/geojson/sbsj/zonas/pbzph.geojson",
+      "target": "data/geojson/sbsj/originais/pbzph.kml",
       "category": "zonas-protecao",
+      "format": "KML",
       "featureCount": 17
     },
     {
       "dataset": "PBZPA SBSJ",
       "source": "data/02-Dados Geo/pbzpa_SBSJ.kmz",
-      "target": "data/geojson/sbsj/zonas/pbzpa_sbsj.geojson",
+      "target": "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz",
       "category": "zonas-protecao",
+      "format": "KMZ",
       "featureCount": 188
     },
     {
       "dataset": "PZPANA SBSJ",
       "source": "data/02-Dados Geo/pzpana_SBSJ.kmz",
-      "target": "data/geojson/sbsj/zonas/pzpana_sbsj.geojson",
+      "target": "data/geojson/sbsj/originais/pzpana_SBSJ.kmz",
       "category": "zonas-protecao",
+      "format": "KMZ",
       "featureCount": 82
     }
   ]

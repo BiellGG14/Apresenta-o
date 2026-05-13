@@ -4,18 +4,19 @@ Use esta pasta para manter os dados que alimentam o mapa interativo.
 
 ## Arquivo atual
 
-- `map-layers.js`: catálogo inicial de camadas, textos executivos, status e geometrias demonstrativas.
-- `geojson/sbsj/`: dados derivados e rastreáveis usados pelo mapa.
+- `map-layers.js`: catálogo de camadas, textos, status e caminhos dos arquivos usados no mapa.
+- `geojson/sbsj/originais/`: KML/KMZ úteis promovidos para uso no mapa.
+- `simulacoes/`: logs de cenário lidos pelo mapa para desenhar trajetórias.
 
 ## Fonte bruta local
 
 - `02-Dados Geo/`: pasta de origem adicionada a partir dos materiais do Marcelo.
 - Esta pasta não é consumida diretamente pelo mapa.
-- Quando um dado for aprovado para uso, gere uma cópia derivada em `geojson/sbsj/` ou na pasta temática correspondente.
+- Quando um dado for aprovado para uso, promova apenas o arquivo útil para `geojson/sbsj/originais/` ou para a pasta temática correspondente.
 
 ## Próximos dados sugeridos
 
-- `geojson/`: limites oficiais, trajetórias, zonas de proteção e obstáculos.
+- `geojson/`: geodados oficiais ou úteis publicados no mapa.
 - `metar/`: séries tratadas de meteorologia do SBSJ.
 - `simulacoes/`: saídas de BlueSky, Monte Carlo, P95/P99 e pontos de toque.
 - `ruido/`: resultados exportados do NoiseModelling.

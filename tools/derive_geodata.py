@@ -248,8 +248,18 @@ def convert_kml_to_geojson(
     }
 
 
+def count_placemarks(source_root: Path, source_file: str, bbox: tuple[float, float, float, float] | None = None) -> int:
+    root = ET.fromstring(read_kml(source_root / source_file))
+    placemarks = [node for node in root.iter() if local_name(node.tag) == "Placemark"]
+
+    if bbox is None:
+        return len(placemarks)
+
+    return sum(1 for placemark in placemarks if in_bbox(coordinate_texts(placemark), bbox))
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Deriva KML/KMZ brutos para GeoJSON rastreável usado pelo mapa.")
+    parser = argparse.ArgumentParser(description="Promove KML/KMZ úteis para consumo rastreável no mapa.")
     parser.add_argument("--source-root", default=str(DEFAULT_SOURCE))
     parser.add_argument("--output-root", default=str(DEFAULT_OUTPUT))
     args = parser.parse_args()
@@ -258,24 +268,63 @@ def main() -> None:
     output_root = Path(args.output_root).resolve()
     output_root.mkdir(parents=True, exist_ok=True)
 
-    items = [
-        convert_kml_to_geojson(source_root, output_root, "opeaSBSJ.kml", "obstaculos/opea_sbsj.geojson", "OPEA SBSJ", "obstaculos", SBSJ_BBOX),
-        convert_kml_to_geojson(source_root, output_root, "pbzph.kml", "zonas/pbzph.geojson", "PBZPH", "zonas-protecao"),
-        convert_kml_to_geojson(source_root, output_root, "pbzpa_SBSJ.kmz", "zonas/pbzpa_sbsj.geojson", "PBZPA SBSJ", "zonas-protecao"),
-        convert_kml_to_geojson(source_root, output_root, "pzpana_SBSJ.kmz", "zonas/pzpana_sbsj.geojson", "PZPANA SBSJ", "zonas-protecao"),
-    ]
-
     original_root = output_root / "originais"
     original_root.mkdir(parents=True, exist_ok=True)
-    original_files = ["opeaSBSJ.kml", "pbzph.kml", "pbzpa_SBSJ.kmz", "pzpana_SBSJ.kmz"]
-    for filename in original_files:
-        shutil.copy2(source_root / filename, original_root / filename)
+    original_files = [
+        {
+            "dataset": "OPEA SBSJ",
+            "sourceFile": "opeaSBSJ.kml",
+            "target": "data/geojson/sbsj/originais/opeaSBSJ.kml",
+            "category": "obstaculos",
+            "format": "KML",
+            "bbox": SBSJ_BBOX,
+        },
+        {
+            "dataset": "PBZPH",
+            "sourceFile": "pbzph.kml",
+            "target": "data/geojson/sbsj/originais/pbzph.kml",
+            "category": "zonas-protecao",
+            "format": "KML",
+        },
+        {
+            "dataset": "PBZPA SBSJ",
+            "sourceFile": "pbzpa_SBSJ.kmz",
+            "target": "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz",
+            "category": "zonas-protecao",
+            "format": "KMZ",
+        },
+        {
+            "dataset": "PZPANA SBSJ",
+            "sourceFile": "pzpana_SBSJ.kmz",
+            "target": "data/geojson/sbsj/originais/pzpana_SBSJ.kmz",
+            "category": "zonas-protecao",
+            "format": "KMZ",
+        },
+    ]
+
+    items = []
+    for item in original_files:
+        source_file = item["sourceFile"]
+        shutil.copy2(source_root / source_file, ROOT / item["target"])
+        feature_count = count_placemarks(source_root, source_file, item.get("bbox"))
+        manifest_item = {
+            "dataset": item["dataset"],
+            "source": f"data/02-Dados Geo/{source_file}",
+            "target": item["target"],
+            "category": item["category"],
+            "format": item["format"],
+            "featureCount": feature_count,
+        }
+
+        if item.get("bbox"):
+            manifest_item["bbox"] = list(item["bbox"])
+
+        items.append(manifest_item)
 
     manifest = {
         "generatedAt": dt.datetime.now().isoformat(timespec="seconds"),
         "sourceRoot": "data/02-Dados Geo",
-        "note": "Arquivos derivados para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
-        "originalCopies": [f"data/geojson/sbsj/originais/{filename}" for filename in original_files],
+        "note": "Arquivos KML/KMZ uteis promovidos para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
         "items": items,
     }
     (output_root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")

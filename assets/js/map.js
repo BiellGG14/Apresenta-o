@@ -10,7 +10,7 @@
   const activeLayerIds = new Set();
   const layerGroups = new Map();
   const layerLoadState = new Map();
-  const renderableFileTypes = new Set(["geojson", "kml", "kmz"]);
+  const renderableFileTypes = new Set(["geojson", "kml", "kmz", "statelog"]);
   const expectedFileLoads = new Map(
     layers.map((layer) => [
       layer.id,
@@ -63,7 +63,8 @@
     all: "Todas",
     ambiente: "Ambiente",
     fase1: "Fase I",
-    riscos: "Proteção"
+    riscos: "Proteção",
+    simulacao: "Simulação"
   };
 
   function escapeHtml(value) {
@@ -104,8 +105,22 @@
     const folderPath = Array.isArray(properties.folderPath) && properties.folderPath.length
       ? `<br><small>${escapeHtml(properties.folderPath.join(" / "))}</small>`
       : "";
+    const description = properties.description
+      ? `<br><small>${escapeHtml(properties.description)}</small>`
+      : "";
+    const stats =
+      properties.durationSeconds || properties.maxAltitude || properties.maxGroundSpeed
+        ? `<br><small>${[
+            properties.durationSeconds ? `${properties.durationSeconds}s` : "",
+            properties.maxAltitude ? `alt máx ${properties.maxAltitude} m` : "",
+            properties.maxGroundSpeed ? `GS máx ${properties.maxGroundSpeed}` : ""
+          ]
+            .filter(Boolean)
+            .map(escapeHtml)
+            .join(" · ")}</small>`
+        : "";
 
-    return `<strong>${escapeHtml(name)}</strong><br>${escapeHtml(dataset)}${folderPath}`;
+    return `<strong>${escapeHtml(name)}</strong><br>${escapeHtml(dataset)}${folderPath}${description}${stats}`;
   }
 
   function geoJsonStyle(layer, featureConfig, geoFeature) {
@@ -270,6 +285,38 @@
     return folders;
   }
 
+  function coordinatePairs(value) {
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (
+      value.length >= 2 &&
+      typeof value[0] === "number" &&
+      typeof value[1] === "number"
+    ) {
+      return [[value[0], value[1]]];
+    }
+
+    return value.flatMap((item) => coordinatePairs(item));
+  }
+
+  function geometryIntersectsBbox(geometry, bbox) {
+    if (!bbox || !geometry) {
+      return true;
+    }
+
+    if (geometry.type === "GeometryCollection") {
+      return geometry.geometries.some((item) => geometryIntersectsBbox(item, bbox));
+    }
+
+    const [minLon, minLat, maxLon, maxLat] = bbox;
+
+    return coordinatePairs(geometry.coordinates).some(
+      ([lon, lat]) => minLon <= lon && lon <= maxLon && minLat <= lat && lat <= maxLat
+    );
+  }
+
   function kmlTextToGeoJson(kmlText, layer, featureConfig) {
     const xml = new DOMParser().parseFromString(kmlText, "application/xml");
 
@@ -283,6 +330,10 @@
         const geometry = geometryFromPlacemark(placemark);
 
         if (!geometry) {
+          return null;
+        }
+
+        if (!geometryIntersectsBbox(geometry, featureConfig.bbox)) {
           return null;
         }
 
@@ -304,6 +355,136 @@
       .filter(Boolean);
 
     return { type: "FeatureCollection", features };
+  }
+
+  function sampleCoordinates(points, maxPoints) {
+    if (points.length <= maxPoints) {
+      return points;
+    }
+
+    const step = Math.ceil(points.length / maxPoints);
+    const sampled = points.filter((_, index) => index % step === 0);
+    const last = points[points.length - 1];
+
+    if (sampled[sampled.length - 1] !== last) {
+      sampled.push(last);
+    }
+
+    return sampled;
+  }
+
+  function stateLogToGeoJson(logText, layer, featureConfig) {
+    const rows = [];
+    let lastCoordKey = "";
+
+    logText.split(/\r?\n/).forEach((line) => {
+      const trimmed = line.trim();
+
+      if (!trimmed || trimmed.startsWith("#")) {
+        return;
+      }
+
+      const parts = trimmed.split(",").map((part) => part.trim());
+
+      if (parts.length < 9) {
+        return;
+      }
+
+      const simt = Number(parts[0]);
+      const id = parts[1];
+      const lat = Number(parts[2]);
+      const lon = Number(parts[3]);
+      const dist = Number(parts[4]);
+      const alt = Number(parts[5]);
+      const gs = Number(parts[8]);
+
+      if (![simt, lat, lon].every(Number.isFinite)) {
+        return;
+      }
+
+      const coordKey = `${lat.toFixed(8)},${lon.toFixed(8)}`;
+
+      if (coordKey === lastCoordKey) {
+        return;
+      }
+
+      lastCoordKey = coordKey;
+      rows.push({
+        simt,
+        id,
+        lat,
+        lon,
+        dist: Number.isFinite(dist) ? dist : null,
+        alt: Number.isFinite(alt) ? alt : null,
+        gs: Number.isFinite(gs) ? gs : null
+      });
+    });
+
+    if (!rows.length) {
+      return { type: "FeatureCollection", features: [] };
+    }
+
+    const sampledRows = sampleCoordinates(rows, featureConfig.maxPoints || 5000);
+    const coordinates = sampledRows.map((row) => [row.lon, row.lat]);
+    const start = rows[0];
+    const end = rows[rows.length - 1];
+    const maxAlt = Math.max(...rows.map((row) => row.alt || 0));
+    const maxGs = Math.max(...rows.map((row) => row.gs || 0));
+    const duration = end.simt - start.simt;
+    const commonProperties = {
+      dataset: featureConfig.label || layer.shortTitle,
+      source: featureConfig.url,
+      aircraft: start.id,
+      samples: rows.length,
+      renderedSamples: sampledRows.length,
+      durationSeconds: Number.isFinite(duration) ? Math.round(duration) : null,
+      maxAltitude: Number.isFinite(maxAlt) ? Math.round(maxAlt) : null,
+      maxGroundSpeed: Number.isFinite(maxGs) ? Math.round(maxGs) : null
+    };
+
+    return {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {
+            ...commonProperties,
+            name: `${featureConfig.label || layer.title} · trajetória`,
+            description: `${rows.length} pontos únicos; ${sampledRows.length} desenhados no mapa.`
+          },
+          geometry: {
+            type: "LineString",
+            coordinates
+          }
+        },
+        {
+          type: "Feature",
+          properties: {
+            ...commonProperties,
+            name: `${featureConfig.label || layer.title} · início`,
+            kind: "start",
+            description: `t=${Math.round(start.simt)}s`
+          },
+          geometry: {
+            type: "Point",
+            coordinates: [start.lon, start.lat]
+          }
+        },
+        {
+          type: "Feature",
+          properties: {
+            ...commonProperties,
+            name: `${featureConfig.label || layer.title} · fim`,
+            kind: "end",
+            description: `t=${Math.round(end.simt)}s`
+          },
+          geometry: {
+            type: "Point",
+            coordinates: [end.lon, end.lat]
+          }
+        }
+      ]
+    };
   }
 
   async function fetchTextFile(url) {
@@ -356,6 +537,10 @@
 
     if (feature.type === "kmz") {
       return kmlTextToGeoJson(await loadKmzText(feature.url), layer, feature);
+    }
+
+    if (feature.type === "statelog") {
+      return stateLogToGeoJson(await fetchTextFile(feature.url), layer, feature);
     }
 
     return null;
@@ -459,14 +644,23 @@
         .then((data) => {
           const geoJsonLayer = L.geoJSON(data, {
             style: (geoFeature) => geoJsonStyle(layer, feature, geoFeature),
-            pointToLayer: (geoFeature, latlng) =>
-              L.circleMarker(latlng, {
-                radius: feature.radius || 5,
+            pointToLayer: (geoFeature, latlng) => {
+              const kind = geoFeature.properties?.kind;
+              const isEndpoint = kind === "start" || kind === "end";
+
+              return L.circleMarker(latlng, {
+                radius: isEndpoint ? feature.endpointRadius || 7 : feature.radius || 5,
                 color: "#ffffff",
-                weight: 1.2,
-                fillColor: feature.fillColor || feature.color || layer.color,
+                weight: isEndpoint ? 2 : 1.2,
+                fillColor:
+                  kind === "start"
+                    ? feature.startColor || feature.fillColor || feature.color || layer.color
+                    : kind === "end"
+                      ? feature.endColor || feature.fillColor || feature.color || layer.color
+                      : feature.fillColor || feature.color || layer.color,
                 fillOpacity: feature.fillOpacity ?? 0.86
-              }),
+              });
+            },
             onEachFeature: (geoFeature, leafletLayer) => {
               leafletLayer.bindPopup(geoJsonPopupContent(layer, feature, geoFeature));
               leafletLayer.on("click", () => selectLayer(layer.id, false));
@@ -551,13 +745,17 @@
       return null;
     }
 
-    group.eachLayer((item) => {
+    function extendBounds(item) {
       if (typeof item.getBounds === "function") {
         bounds.extend(item.getBounds());
       } else if (typeof item.getLatLng === "function") {
         bounds.extend(item.getLatLng());
+      } else if (typeof item.eachLayer === "function") {
+        item.eachLayer((child) => extendBounds(child));
       }
-    });
+    }
+
+    group.eachLayer((item) => extendBounds(item));
 
     return bounds.isValid() ? bounds : null;
   }

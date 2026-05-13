@@ -1,30 +1,23 @@
-# GeoJSON Derivados do SBSJ
+# Geodados do SBSJ
 
-Esta pasta contém dados derivados para consumo direto do mapa interativo.
+Esta pasta mantém os arquivos úteis promovidos para consumo do mapa interativo.
+O nome `geojson` ficou como pasta histórica do projeto, mas o mapa atual usa KML/KMZ diretamente.
 
 ## Regra de rastreabilidade
 
 - `data/02-Dados Geo/` é fonte bruta local.
 - O site não deve carregar arquivos diretamente dessa fonte bruta.
-- Arquivos usados no mapa devem ser convertidos, filtrados e salvos aqui.
-- Cópias dos arquivos originais úteis ficam em `originais/` para rastreabilidade.
-- O manifest `manifest.json` registra origem, destino e contagem de feições.
+- Arquivos aprovados para o mapa ficam em `originais/`.
+- O manifest `manifest.json` registra origem, destino, formato e contagem de feições.
 
-## Derivados atuais
+## Arquivos atuais
 
-- `obstaculos/opea_sbsj.geojson`: obstáculos OPEA filtrados para o entorno do SBSJ.
-- `zonas/pbzph.geojson`: PBZPH derivado de KML.
-- `zonas/pbzpa_sbsj.geojson`: PBZPA SBSJ derivado de KMZ.
-- `zonas/pzpana_sbsj.geojson`: PZPANA SBSJ derivado de KMZ.
+- `originais/opeaSBSJ.kml`: obstáculos OPEA filtrados no mapa para o entorno do SBSJ.
+- `originais/pbzph.kml`: PBZPH em KML.
+- `originais/pbzpa_SBSJ.kmz`: PBZPA SBSJ em KMZ.
+- `originais/pzpana_SBSJ.kmz`: PZPANA SBSJ em KMZ.
 
-## Originais úteis preservados
-
-- `originais/opeaSBSJ.kml`
-- `originais/pbzph.kml`
-- `originais/pbzpa_SBSJ.kmz`
-- `originais/pzpana_SBSJ.kmz`
-
-## Como regenerar
+## Como atualizar
 
 Execute, a partir da raiz do projeto:
 
