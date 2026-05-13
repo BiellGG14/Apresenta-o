@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Interativo | SBSJ</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Mapa Interativo do SBSJ</h1>
+      <p>Base cartográfica com divisões temáticas para suporte ao estudo.</p>
+    </header>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="mapa.html" aria-current="page">Mapa Interativo</a>
+      <a href="formulario.html">Formulário Técnico</a>
+      <a href="relatorio.html">Relatório Acadêmico</a>
+    </nav>
+
+    <main class="two-column-layout">
+      <section class="card map-card">
+        <h2>Visualização geográfica</h2>
+        <div id="map" aria-label="Mapa interativo do SBSJ"></div>
+      </section>
+
+      <aside class="card">
+        <h2>Divisões temáticas</h2>
+        <ul>
+          <li>Meteorologia e dados aeroportuários</li>
+          <li>Espaço aéreo e restrições regulatórias</li>
+          <li>Topografia, obstáculos e áreas sensíveis</li>
+          <li>Desvios de trajetória</li>
+          <li>Ruído aeronáutico</li>
+        </ul>
+        <p>
+          Use o controle de camadas para ativar e desativar as informações de
+          cada divisão.
+        </p>
+      </aside>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+  </body>
+</html>
