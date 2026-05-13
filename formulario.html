@@ -59,9 +59,14 @@
     <script>
       document.getElementById('formulario-tecnico').addEventListener('submit', function (event) {
         event.preventDefault();
-        const formData = new FormData(event.target);
-        localStorage.setItem('formularioTecnicoSBSJ', JSON.stringify(Object.fromEntries(formData.entries())));
-        document.getElementById('form-status').textContent = 'Informações registradas localmente neste navegador.';
+        const statusElement = document.getElementById('form-status');
+        try {
+          const formData = new FormData(event.target);
+          localStorage.setItem('formularioTecnicoSBSJ', JSON.stringify(Object.fromEntries(formData.entries())));
+          statusElement.textContent = 'Informações registradas localmente neste navegador.';
+        } catch (error) {
+          statusElement.textContent = 'Não foi possível salvar localmente. Verifique as permissões do navegador.';
+        }
       });
     </script>
   </body>

@@ -4,7 +4,7 @@ if (mapContainer) {
   const sbsjCoordinates = [-23.2276, -45.8614];
   const map = L.map('map').setView(sbsjCoordinates, 12);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  const baseMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
@@ -50,5 +50,5 @@ if (mapContainer) {
   ruido.addTo(map);
   desvios.addTo(map);
 
-  L.control.layers({}, overlays).addTo(map);
+  L.control.layers({ 'Mapa base': baseMap }, overlays).addTo(map);
 }
