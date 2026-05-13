@@ -54,10 +54,14 @@
 
         <button type="submit">Registrar informações</button>
       </form>
+      <p id="form-status" role="status" aria-live="polite"></p>
     </main>
     <script>
       document.getElementById('formulario-tecnico').addEventListener('submit', function (event) {
         event.preventDefault();
+        const formData = new FormData(event.target);
+        localStorage.setItem('formularioTecnicoSBSJ', JSON.stringify(Object.fromEntries(formData.entries())));
+        document.getElementById('form-status').textContent = 'Informações registradas localmente neste navegador.';
       });
     </script>
   </body>

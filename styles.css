@@ -124,6 +124,11 @@ button {
   cursor: pointer;
 }
 
+#form-status {
+  margin: 0.8rem 0 0;
+  color: var(--accent);
+}
+
 @media (max-width: 900px) {
   .two-column-layout {
     grid-template-columns: 1fr;

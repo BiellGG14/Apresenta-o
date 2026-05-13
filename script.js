@@ -1,6 +1,6 @@
-const mapElement = document.getElementById('map');
+const mapContainer = document.getElementById('map');
 
-if (mapElement) {
+if (mapContainer) {
   const sbsjCoordinates = [-23.2276, -45.8614];
   const map = L.map('map').setView(sbsjCoordinates, 12);
 
