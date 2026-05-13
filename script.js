@@ -1,51 +1,53 @@
-const map = L.map('map').setView([-23.2276, -45.8614], 12);
+const mapElement = document.getElementById('map');
 
-const baseMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+if (mapElement) {
+  const map = L.map('map').setView([-23.2276, -45.8614], 12);
 
-const aeroporto = L.marker([-23.2276, -45.8614]).bindPopup('Aeroporto de São José dos Campos (SBSJ)');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
 
-const areaOperacional = L.polygon([
-  [-23.245, -45.88],
-  [-23.205, -45.88],
-  [-23.205, -45.84],
-  [-23.245, -45.84]
-], {
-  color: '#1d4e89',
-  fillOpacity: 0.2
-}).bindPopup('Área de análise operacional');
+  const aeroporto = L.marker([-23.2276, -45.8614]).bindPopup('Aeroporto de São José dos Campos (SBSJ)');
 
-const ruido = L.circle([-23.2276, -45.8614], {
-  radius: 4000,
-  color: '#b02a37',
-  fillColor: '#b02a37',
-  fillOpacity: 0.15
-}).bindPopup('Área estimada de influência de ruído aeronáutico');
+  const areaOperacional = L.polygon([
+    [-23.245, -45.88],
+    [-23.205, -45.88],
+    [-23.205, -45.84],
+    [-23.245, -45.84]
+  ], {
+    color: '#1d4e89',
+    fillOpacity: 0.2
+  }).bindPopup('Área de análise operacional');
 
-const desvios = L.polyline([
-  [-23.2276, -45.8614],
-  [-23.21, -45.9],
-  [-23.19, -45.95]
-], {
-  color: '#2d6a4f',
-  weight: 3,
-  dashArray: '8,6'
-}).bindPopup('Exemplo de desvio de trajetória');
+  const ruido = L.circle([-23.2276, -45.8614], {
+    radius: 4000,
+    color: '#b02a37',
+    fillColor: '#b02a37',
+    fillOpacity: 0.15
+  }).bindPopup('Área estimada de influência de ruído aeronáutico');
 
-const overlays = {
-  'Localização do SBSJ': aeroporto,
-  'Topografia/área sensível': areaOperacional,
-  'Ruído aeronáutico': ruido,
-  'Desvio de trajetória': desvios
-};
+  const desvios = L.polyline([
+    [-23.2276, -45.8614],
+    [-23.21, -45.9],
+    [-23.19, -45.95]
+  ], {
+    color: '#2d6a4f',
+    weight: 3,
+    dashArray: '8,6'
+  }).bindPopup('Exemplo de desvio de trajetória');
 
-aeroporto.addTo(map);
-areaOperacional.addTo(map);
-ruido.addTo(map);
-desvios.addTo(map);
+  const overlays = {
+    'Localização do SBSJ': aeroporto,
+    'Topografia/área sensível': areaOperacional,
+    'Ruído aeronáutico': ruido,
+    'Desvio de trajetória': desvios
+  };
 
-L.control.layers({
-  'Mapa base': baseMap
-}, overlays).addTo(map);
+  aeroporto.addTo(map);
+  areaOperacional.addTo(map);
+  ruido.addTo(map);
+  desvios.addTo(map);
+
+  L.control.layers({}, overlays).addTo(map);
+}
