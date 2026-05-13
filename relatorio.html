@@ -3,51 +3,279 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório Acadêmico | SBSJ</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Atividades | Sandbox São José dos Campos</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Estrutura do Relatório Acadêmico</h1>
-      <p>Modelo organizado para consolidação de resultados e análise crítica.</p>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <span class="brand-mark logo-mark">
+          <img src="assets/img/ita.png" alt="ITA" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Sandbox São José dos Campos</span>
+          <span class="brand-subtitle">Atividades e resultados</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Visão geral</a>
+        <a href="mapa.html">Mapa interativo</a>
+        <a href="relatorio.html" aria-current="page">Atividades</a>
+      </nav>
     </header>
 
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="mapa.html">Mapa Interativo</a>
-      <a href="formulario.html">Formulário Técnico</a>
-      <a href="relatorio.html" aria-current="page">Relatório Acadêmico</a>
-    </nav>
-
-    <main class="content-grid">
-      <section class="card">
-        <h2>1. Introdução</h2>
-        <p>Contextualização do SBSJ, objetivos e delimitação do estudo.</p>
-      </section>
-
-      <section class="card">
-        <h2>2. Metodologia</h2>
+    <main class="page-shell report-page">
+      <section class="report-hero">
+        <p class="eyebrow">Relatório web</p>
+        <h1>Atividades do Sandbox Regulatório de Vertiportos</h1>
         <p>
-          Descrição das fontes de dados, procedimentos de análise espacial e
-          critérios de avaliação técnica.
+          Organização das frentes técnicas em formato de relatório navegável,
+          com resumo, conteúdo disponível, relação com o mapa e próximos dados
+          a consolidar.
         </p>
+        <div class="action-row">
+          <a class="button primary" href="mapa.html">Abrir mapa interativo</a>
+          <a class="button secondary" href="#atividades">Ir para atividades</a>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>3. Resultados por divisão temática</h2>
-        <ol>
-          <li>Meteorologia e dados aeroportuários</li>
-          <li>Espaço aéreo e restrições regulatórias</li>
-          <li>Topografia, obstáculos e áreas sensíveis</li>
-          <li>Desvios de trajetória</li>
-          <li>Ruído aeronáutico</li>
-        </ol>
-      </section>
+      <section class="report-reader">
+        <aside class="report-nav" aria-label="Sumário do relatório">
+          <h2>Sumário</h2>
+          <a href="#contexto">1. Contexto operacional</a>
+          <a href="#meteorologia">1.1 Meteorologia</a>
+          <a href="#espaco-aereo">1.2 Espaço aéreo</a>
+          <a href="#topografia">1.3 Topografia</a>
+          <a href="#atividades">2. Atividades</a>
+          <a href="#t3">T3 Passageiros</a>
+          <a href="#t4">T4 Geometria</a>
+          <a href="#t6">T6 Trajetórias</a>
+          <a href="#t10">T10 Ruído</a>
+          <a href="#t12">T12 Proteção</a>
+        </aside>
 
-      <section class="card">
-        <h2>4. Conclusão</h2>
-        <p>Principais achados, limitações e recomendações para estudos futuros.</p>
+        <article class="report-document">
+          <section id="contexto" class="report-section">
+            <p class="section-kicker">1. Contexto operacional</p>
+            <h2>Caracterização do ambiente do SBSJ</h2>
+            <p>
+              A primeira leitura do Sandbox organiza as condições que afetam a
+              implantação e a operação experimental de um vertiporto no entorno
+              do Aeroporto de São José dos Campos. O foco está em três blocos:
+              meteorologia e dados aeroportuários, espaço aéreo e restrições,
+              topografia, obstáculos e áreas sensíveis.
+            </p>
+          </section>
+
+          <section id="meteorologia" class="report-section report-split">
+            <div>
+              <p class="section-kicker">1.1</p>
+              <h2>Meteorologia e dados aeroportuários</h2>
+              <p>
+                Esta frente estrutura as condições meteorológicas relevantes
+                para operações eVTOL: vento, temperatura, visibilidade,
+                precipitação e séries históricas do SBSJ.
+              </p>
+            </div>
+            <div class="report-note">
+              <h3>Uso no Sandbox</h3>
+              <p>Base para cenários de vento, densidade-altitude, dispersão de trajetória e ruído.</p>
+              <a href="mapa.html#meteorologia">Ver camada no mapa</a>
+            </div>
+          </section>
+
+          <section id="espaco-aereo" class="report-section report-split">
+            <div>
+              <p class="section-kicker">1.2</p>
+              <h2>Espaço aéreo e restrições regulamentárias</h2>
+              <p>
+                A análise considera procedimentos publicados, cartas
+                aeronáuticas, restrições do DECEA, fluxos VFR e pontos de
+                entrada ou notificação relacionados à operação no SBSJ.
+              </p>
+            </div>
+            <div class="report-note">
+              <h3>Uso no Sandbox</h3>
+              <p>Define os limites para trajetórias nominais, aproximações e áreas de proteção.</p>
+              <a href="mapa.html#espaco-aereo">Ver camada no mapa</a>
+            </div>
+          </section>
+
+          <section id="topografia" class="report-section report-split">
+            <div>
+              <p class="section-kicker">1.3</p>
+              <h2>Topografia, obstáculos e áreas sensíveis</h2>
+              <p>
+                A frente reúne obstáculos naturais e artificiais, áreas urbanas
+                próximas, pontos sensíveis e informações que serão cruzadas com
+                superfícies limitadoras.
+              </p>
+            </div>
+            <div class="report-note">
+              <h3>Uso no Sandbox</h3>
+              <p>Ajuda a avaliar conflitos entre implantação, trajetórias, ruído e proteção.</p>
+              <a href="mapa.html#topografia">Ver camada no mapa</a>
+            </div>
+          </section>
+
+          <section id="atividades" class="report-section">
+            <p class="section-kicker">2. Atividades</p>
+            <h2>Frentes principais do Sandbox</h2>
+            <p>
+              As atividades abaixo concentram os produtos que alimentam o mapa:
+              fluxo de passageiros, geometria operacional, simulações de
+              trajetória, ruído e zonas de proteção.
+            </p>
+          </section>
+
+          <section id="t3" class="activity-report-card">
+            <div class="activity-report-header">
+              <span class="data-pill">T3</span>
+              <span class="data-pill">Operação</span>
+              <span class="data-pill">15%</span>
+            </div>
+            <h2>Facilitação de passageiros</h2>
+            <p>
+              Avalia os fluxos de passageiros no ambiente do vertiporto:
+              chegada, orientação, espera, embarque, desembarque e interfaces
+              com a infraestrutura aeroportuária existente.
+            </p>
+            <div class="report-columns">
+              <div>
+                <h3>Conteúdo atual</h3>
+                <p>Comparação preliminar de requisitos e estrutura inicial para recomendações operacionais.</p>
+              </div>
+              <div>
+                <h3>No mapa</h3>
+                <p>Pontos e fluxos de acesso podem ser associados às áreas de embarque e apoio.</p>
+              </div>
+              <div>
+                <h3>Próximo passo</h3>
+                <p>Detalhar tempos, gargalos, pontos de espera e interfaces com segurança operacional.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="t4" class="activity-report-card">
+            <div class="activity-report-header">
+              <span class="data-pill">T4</span>
+              <span class="data-pill">Ambiente digital</span>
+              <span class="data-pill">10%</span>
+            </div>
+            <h2>Geometria e arranjo físico</h2>
+            <p>
+              Define a organização preliminar da FATO, TLOF, área de segurança,
+              aproximações, afastamentos e dimensões críticas do arranjo físico.
+            </p>
+            <div class="report-columns">
+              <div>
+                <h3>Conteúdo atual</h3>
+                <p>Leitura inicial de guias e comparação com aeronaves de referência.</p>
+              </div>
+              <div>
+                <h3>No mapa</h3>
+                <p>Polígonos operacionais mostram como a infraestrutura se encaixa no sítio.</p>
+              </div>
+              <div>
+                <h3>Próximo passo</h3>
+                <p>Substituir geometrias preliminares por CAD georreferenciado e critérios normativos.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="t6" class="activity-report-card">
+            <div class="activity-report-header">
+              <span class="data-pill">T6</span>
+              <span class="data-pill">Simulação</span>
+              <span class="data-pill">40%</span>
+            </div>
+            <h2>Desvios de trajetória</h2>
+            <p>
+              Quantifica desvios laterais e verticais do eVTOL em relação a
+              trajetórias nominais, com cenários operacionais e envelopes
+              probabilísticos.
+            </p>
+            <div class="report-columns">
+              <div>
+                <h3>Conteúdo atual</h3>
+                <p>Trajetória nominal, cenários de vento, densidade-altitude e aproximação perdida.</p>
+              </div>
+              <div>
+                <h3>No mapa</h3>
+                <p>Linhas, pontos simulados e envelopes apresentam a dispersão espacial.</p>
+              </div>
+              <div>
+                <h3>Próximo passo</h3>
+                <p>Importar nuvens de pontos reais, P95/P99 e seleção por cenário.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="t10" class="activity-report-card">
+            <div class="activity-report-header">
+              <span class="data-pill">T10</span>
+              <span class="data-pill">Ruído</span>
+              <span class="data-pill">20%</span>
+            </div>
+            <h2>Ruído aeronáutico</h2>
+            <p>
+              Prepara a modelagem acústica para operações de eVTOL, conectando
+              fonte sonora, propagação, receptores e distribuição espacial de
+              níveis de ruído.
+            </p>
+            <div class="report-columns">
+              <div>
+                <h3>Conteúdo atual</h3>
+                <p>Parâmetros de fonte sonora e estrutura para propagação em ambiente urbano.</p>
+              </div>
+              <div>
+                <h3>No mapa</h3>
+                <p>Anéis e áreas de avaliação organizam receptores e zonas sensíveis.</p>
+              </div>
+              <div>
+                <h3>Próximo passo</h3>
+                <p>Inserir resultados exportados da modelagem acústica e pontos de medição.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="t12" class="activity-report-card featured-report-card">
+            <div class="activity-report-header">
+              <span class="data-pill">T12</span>
+              <span class="data-pill">Regulação</span>
+              <span class="data-pill">10%</span>
+            </div>
+            <h2>Zonas de proteção</h2>
+            <p>
+              Consolida os critérios de proteção do vertiporto a partir de
+              geometria, trajetórias, risco, obstáculos e restrições
+              regulamentárias.
+            </p>
+            <div class="report-columns">
+              <div>
+                <h3>Conteúdo atual</h3>
+                <p>Estrutura inicial das zonas e referências regulatórias para o desenho das superfícies.</p>
+              </div>
+              <div>
+                <h3>No mapa</h3>
+                <p>Superfícies principais e complementares destacam áreas de atenção no entorno.</p>
+              </div>
+              <div>
+                <h3>Próximo passo</h3>
+                <p>Calcular superfícies oficiais e cruzar com topografia, obstáculos e dispersão da T6.</p>
+              </div>
+            </div>
+          </section>
+        </article>
       </section>
     </main>
+
+    <footer class="site-footer institutional-footer">
+      <img src="assets/img/anac.png" alt="ANAC" />
+      <span>Sandbox Regulatório de Vertiportos</span>
+      <span>Edital nº 22/ANAC/2024</span>
+      <span>Processo ANAC nº 00058.083793/2023-23</span>
+    </footer>
   </body>
 </html>

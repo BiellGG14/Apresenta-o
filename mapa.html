@@ -3,46 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mapa Interativo | SBSJ</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Mapa Interativo | Sandbox São José dos Campos</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <h1>Mapa Interativo do SBSJ</h1>
-      <p>Base cartográfica com divisões temáticas para suporte ao estudo.</p>
+  <body class="map-page">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <span class="brand-mark logo-mark">
+          <img src="assets/img/ita.png" alt="ITA" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Sandbox São José dos Campos</span>
+          <span class="brand-subtitle">Mapa interativo</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Visão geral</a>
+        <a href="mapa.html" aria-current="page">Mapa interativo</a>
+        <a href="relatorio.html">Atividades</a>
+      </nav>
     </header>
 
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="mapa.html" aria-current="page">Mapa Interativo</a>
-      <a href="formulario.html">Formulário Técnico</a>
-      <a href="relatorio.html">Relatório Acadêmico</a>
-    </nav>
+    <main class="map-shell">
+      <section class="map-toolbar" aria-label="Controles do mapa">
+        <div class="map-title">
+          <h1>Mapa do Sandbox</h1>
+          <p>Camadas de contexto, simulação, ruído e zonas de proteção no entorno do SBSJ.</p>
+        </div>
 
-    <main class="two-column-layout">
-      <section class="card map-card">
-        <h2>Visualização geográfica</h2>
-        <div id="map" aria-label="Mapa interativo do SBSJ"></div>
+        <div class="toolbar-actions">
+          <button class="secondary" type="button" id="focus-sbsj">SBSJ</button>
+          <button class="secondary" type="button" id="enable-all">Ativar tudo</button>
+          <button class="ghost" type="button" id="clear-layers">Foco proteção</button>
+        </div>
       </section>
 
-      <aside class="card">
-        <h2>Divisões temáticas</h2>
-        <ul>
-          <li>Meteorologia e dados aeroportuários</li>
-          <li>Espaço aéreo e restrições regulatórias</li>
-          <li>Topografia, obstáculos e áreas sensíveis</li>
-          <li>Desvios de trajetória</li>
-          <li>Ruído aeronáutico</li>
-        </ul>
-        <p>
-          Use o controle de camadas para ativar e desativar as informações de
-          cada divisão.
-        </p>
-      </aside>
+      <section class="map-workspace">
+        <aside class="map-sidebar" aria-label="Lista de camadas">
+          <div class="panel-heading">
+            <div>
+              <h2>Camadas</h2>
+              <p>Ative, filtre e centralize as frentes técnicas.</p>
+            </div>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filtros de camadas">
+            <button type="button" class="is-active" data-filter="all">Todas</button>
+            <button type="button" data-filter="ambiente">Contexto</button>
+            <button type="button" data-filter="fase1">Atividades</button>
+            <button type="button" data-filter="riscos">Proteção</button>
+          </div>
+
+          <div id="layer-list" class="layer-list"></div>
+        </aside>
+
+        <section class="map-main" aria-label="Mapa e detalhes">
+          <section class="map-stage" aria-label="Mapa do SBSJ">
+            <div id="map" aria-label="Mapa interativo com camadas do Sandbox"></div>
+            <div class="map-status-strip" aria-live="polite">
+              <span class="map-badge" id="active-count">0 camadas ativas</span>
+              <span class="map-badge" id="selected-layer-name">Foco: Zonas de proteção</span>
+              <span class="map-badge">Base cartográfica + satélite</span>
+            </div>
+          </section>
+
+          <aside class="map-details" id="layer-details" aria-label="Detalhes da camada selecionada"></aside>
+        </section>
+      </section>
+
+      <section class="surface-panel" aria-labelledby="map-links-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="map-links-title">Atalhos de análise</h2>
+            <p>Selecione um foco para reposicionar o mapa e abrir a camada correspondente.</p>
+          </div>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <h3>Ambiente operacional</h3>
+            <p>Meteorologia, espaço aéreo e topografia estruturam as restrições do sítio.</p>
+            <button class="ghost" type="button" data-story-layer="espaco-aereo">Abrir espaço aéreo</button>
+          </article>
+          <article class="topic-card">
+            <h3>Trajetórias</h3>
+            <p>A T6 organiza a trajetória nominal, pontos simulados e envelopes probabilísticos.</p>
+            <button class="ghost" type="button" data-story-layer="desvios">Abrir desvios</button>
+          </article>
+          <article class="topic-card">
+            <h3>Zonas de proteção</h3>
+            <p>A T12 integra geometria, risco e critérios regulatórios em superfícies de proteção.</p>
+            <button class="ghost" type="button" data-story-layer="zonas-protecao">Abrir proteção</button>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="script.js"></script>
+    <footer class="site-footer institutional-footer">
+      <img src="assets/img/anac.png" alt="ANAC" />
+      <span>Sandbox Regulatório de Vertiportos</span>
+      <span>Edital nº 22/ANAC/2024</span>
+      <span>Processo ANAC nº 00058.083793/2023-23</span>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="data/map-layers.js"></script>
+    <script src="assets/js/map.js"></script>
   </body>
 </html>

@@ -3,48 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planejamento Aeroportuário SBSJ</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Sandbox São José dos Campos | ITA</title>
+    <meta
+      name="description"
+      content="Portal interativo do Sandbox Regulatório de Vertiportos em São José dos Campos."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Planejamento Aeroportuário do SBSJ</h1>
-      <p>Ferramenta acadêmica para análise geográfica, regulatória e operacional.</p>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <span class="brand-mark logo-mark">
+          <img src="assets/img/ita.png" alt="ITA" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Sandbox São José dos Campos</span>
+          <span class="brand-subtitle">Sandbox Regulatório de Vertiportos</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Visão geral</a>
+        <a href="mapa.html">Mapa interativo</a>
+        <a href="relatorio.html">Atividades</a>
+      </nav>
     </header>
 
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="index.html" aria-current="page">Início</a>
-      <a href="mapa.html">Mapa Interativo</a>
-      <a href="formulario.html">Formulário Técnico</a>
-      <a href="relatorio.html">Relatório Acadêmico</a>
-    </nav>
+    <main class="page-shell">
+      <section class="executive-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Sandbox Regulatório de Vertiportos</p>
+          <h1>São José dos Campos como ambiente de estudo para vertiportos</h1>
+          <p>
+            Uma navegação visual pelas frentes técnicas do Sandbox: ambiente
+            operacional, restrições, simulações, infraestrutura, ruído e zonas
+            de proteção.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mapa.html">Explorar mapa</a>
+            <a class="button secondary" href="relatorio.html">Ver atividades</a>
+          </div>
+        </div>
 
-    <main class="content-grid">
-      <section class="card">
-        <h2>Objetivo da plataforma</h2>
-        <p>
-          Esta página organiza o conteúdo de um estudo com foco no Aeroporto de
-          São José dos Campos (SBSJ), separando dados geográficos, formulário
-          técnico e estrutura de relatório em páginas distintas.
-        </p>
+        <aside class="hero-panel" aria-label="Resumo do Sandbox">
+          <div class="panel-heading">
+            <div>
+              <h2>Leitura integrada</h2>
+              <p>Camadas técnicas conectadas ao entorno do SBSJ e ao desenho preliminar do vertiporto.</p>
+            </div>
+            <span class="status-pill progress">Em desenvolvimento</span>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>8</strong>
+              <span>frentes técnicas</span>
+            </div>
+            <div class="metric">
+              <strong>3</strong>
+              <span>temas de contexto</span>
+            </div>
+            <div class="metric">
+              <strong>5</strong>
+              <span>atividades principais</span>
+            </div>
+          </div>
+
+          <div class="mini-map" aria-hidden="true"></div>
+        </aside>
       </section>
 
-      <section class="card">
-        <h2>Estrutura de páginas</h2>
-        <ul>
-          <li><strong>Mapa Interativo:</strong> visualização temática por divisões.</li>
-          <li><strong>Formulário Técnico:</strong> coleta organizada por tópicos.</li>
-          <li><strong>Relatório Acadêmico:</strong> roteiro para consolidação final.</li>
-        </ul>
+      <section class="surface-panel" aria-labelledby="temas-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="temas-title">Conteúdo priorizado</h2>
+            <p>Base técnica usada para entender o entorno operacional antes das simulações e superfícies de proteção.</p>
+          </div>
+          <a class="button ghost" href="relatorio.html#contexto">Ler contexto</a>
+        </div>
+
+        <div class="topic-grid">
+          <a class="topic-card link-card" href="mapa.html#meteorologia">
+            <h3>Meteorologia e dados aeroportuários</h3>
+            <p>Condições de vento, temperatura, visibilidade e dados operacionais do SBSJ.</p>
+          </a>
+          <a class="topic-card link-card" href="mapa.html#espaco-aereo">
+            <h3>Espaço aéreo e restrições</h3>
+            <p>Procedimentos publicados, cartas aeronáuticas, DECEA e condicionantes para operação VFR.</p>
+          </a>
+          <a class="topic-card link-card" href="mapa.html#topografia">
+            <h3>Topografia e áreas sensíveis</h3>
+            <p>Obstáculos, áreas urbanas, ocupação do entorno e cruzamento com superfícies limitadoras.</p>
+          </a>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>Uso recomendado</h2>
-        <p>
-          Inicie pelo mapa, registre observações no formulário e consolide as
-          conclusões na página de relatório.
-        </p>
+      <section class="surface-panel" aria-labelledby="tarefas-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="tarefas-title">Atividades do Sandbox</h2>
+            <p>Frentes organizadas por tema, avanço e relação com o mapa interativo.</p>
+          </div>
+          <a class="button ghost" href="mapa.html">Abrir camadas</a>
+        </div>
+
+        <div class="task-grid">
+          <a class="task-card link-card" href="relatorio.html#t3">
+            <h3>T3 · Facilitação de passageiros</h3>
+            <p>Fluxos de chegada, espera, embarque e recomendações preliminares de operação.</p>
+            <div class="task-meta">
+              <span class="data-pill">Operação</span>
+              <span class="data-pill">15%</span>
+            </div>
+            <div class="progress-bar low"><span style="width: 15%"></span></div>
+          </a>
+
+          <a class="task-card link-card" href="relatorio.html#t4">
+            <h3>T4 · Geometria e arranjo físico</h3>
+            <p>FATO, TLOF, área de segurança, arranjo físico e dimensões críticas.</p>
+            <div class="task-meta">
+              <span class="data-pill">Ambiente digital</span>
+              <span class="data-pill">10%</span>
+            </div>
+            <div class="progress-bar low"><span style="width: 10%"></span></div>
+          </a>
+
+          <a class="task-card link-card" href="relatorio.html#t6">
+            <h3>T6 · Desvios de trajetória</h3>
+            <p>Trajetórias nominais, cenários operacionais e envelopes probabilísticos.</p>
+            <div class="task-meta">
+              <span class="data-pill">Simulação</span>
+              <span class="data-pill">40%</span>
+            </div>
+            <div class="progress-bar"><span style="width: 40%"></span></div>
+          </a>
+
+          <a class="task-card link-card" href="relatorio.html#t10">
+            <h3>T10 · Ruído aeronáutico</h3>
+            <p>Fonte sonora, propagação urbana e preparação do mapa de distribuição de ruído.</p>
+            <div class="task-meta">
+              <span class="data-pill">Ambiente digital</span>
+              <span class="data-pill">20%</span>
+            </div>
+            <div class="progress-bar warn"><span style="width: 20%"></span></div>
+          </a>
+
+          <a class="task-card link-card task-card-featured" href="relatorio.html#t12">
+            <h3>T12 · Zonas de proteção</h3>
+            <p>Superfícies e áreas de proteção derivadas de critérios regulatórios, risco e resultados de trajetória.</p>
+            <div class="task-meta">
+              <span class="data-pill">Regulação</span>
+              <span class="data-pill">10%</span>
+            </div>
+            <div class="progress-bar low"><span style="width: 10%"></span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="surface-panel" aria-labelledby="navegacao-title">
+        <div class="panel-heading">
+          <div>
+            <h2 id="navegacao-title">Navegação rápida</h2>
+            <p>Três portas de entrada para consultar o Sandbox sem depender de documento externo.</p>
+          </div>
+        </div>
+
+        <div class="section-grid">
+          <a class="nav-card link-card" href="index.html">
+            <span>01</span>
+            <h3>Visão geral</h3>
+            <p>Resumo do escopo, temas priorizados e atividades principais.</p>
+          </a>
+          <a class="nav-card link-card" href="mapa.html">
+            <span>02</span>
+            <h3>Mapa interativo</h3>
+            <p>Camadas geográficas, filtros, base satélite e detalhes por frente técnica.</p>
+          </a>
+          <a class="nav-card link-card" href="relatorio.html">
+            <span>03</span>
+            <h3>Atividades</h3>
+            <p>Relatório web com metodologia, resultados atuais e próximos passos.</p>
+          </a>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer institutional-footer">
+      <img src="assets/img/anac.png" alt="ANAC" />
+      <span>Sandbox Regulatório de Vertiportos</span>
+      <span>Edital nº 22/ANAC/2024</span>
+      <span>Processo ANAC nº 00058.083793/2023-23</span>
+    </footer>
   </body>
 </html>
