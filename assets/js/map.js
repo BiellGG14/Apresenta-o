@@ -89,6 +89,30 @@
     return leafletLayer;
   }
 
+  function geoJsonPopupContent(layer, featureConfig, geoFeature) {
+    const properties = geoFeature.properties || {};
+    const name = properties.name || featureConfig.label || layer.title;
+    const dataset = properties.dataset || featureConfig.label || layer.shortTitle;
+    const folderPath = Array.isArray(properties.folderPath) && properties.folderPath.length
+      ? `<br><small>${escapeHtml(properties.folderPath.join(" / "))}</small>`
+      : "";
+
+    return `<strong>${escapeHtml(name)}</strong><br>${escapeHtml(dataset)}${folderPath}`;
+  }
+
+  function geoJsonStyle(layer, featureConfig, geoFeature) {
+    const geometryType = geoFeature.geometry?.type || "";
+
+    return {
+      color: featureConfig.color || layer.color,
+      fillColor: featureConfig.fillColor || featureConfig.color || layer.color,
+      fillOpacity: featureConfig.fillOpacity ?? (geometryType.includes("Polygon") ? 0.16 : 0.5),
+      opacity: 0.92,
+      weight: featureConfig.weight || (geometryType.includes("Line") ? 3 : 2),
+      dashArray: featureConfig.dashArray || null
+    };
+  }
+
   function buildFeature(layer, feature) {
     const style = featureStyle(layer, feature);
 
@@ -135,6 +159,45 @@
           }
         )
       );
+    }
+
+    if (feature.type === "geojson") {
+      const group = L.layerGroup();
+      fetch(feature.url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Falha ao carregar ${feature.url}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const geoJsonLayer = L.geoJSON(data, {
+            style: (geoFeature) => geoJsonStyle(layer, feature, geoFeature),
+            pointToLayer: (geoFeature, latlng) =>
+              L.circleMarker(latlng, {
+                radius: feature.radius || 5,
+                color: "#ffffff",
+                weight: 1.2,
+                fillColor: feature.fillColor || feature.color || layer.color,
+                fillOpacity: feature.fillOpacity ?? 0.86
+              }),
+            onEachFeature: (geoFeature, leafletLayer) => {
+              leafletLayer.bindPopup(geoJsonPopupContent(layer, feature, geoFeature));
+              leafletLayer.on("click", () => selectLayer(layer.id, false));
+            }
+          });
+
+          geoJsonLayer.addTo(group);
+
+          if (selectedLayerId === layer.id && activeLayerIds.has(layer.id)) {
+            focusLayer(layer.id);
+          }
+        })
+        .catch((error) => {
+          console.warn(error);
+        });
+
+      return group;
     }
 
     return null;

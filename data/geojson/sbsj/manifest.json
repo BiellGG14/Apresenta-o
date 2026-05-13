@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-13T14:43:52",
+  "sourceRoot": "data/02-Dados Geo",
+  "note": "Arquivos derivados para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
+  "items": [
+    {
+      "dataset": "OPEA SBSJ",
+      "source": "data/02-Dados Geo/opeaSBSJ.kml",
+      "target": "data/geojson/sbsj/obstaculos/opea_sbsj.geojson",
+      "category": "obstaculos",
+      "featureCount": 428
+    },
+    {
+      "dataset": "PBZPH",
+      "source": "data/02-Dados Geo/pbzph.kml",
+      "target": "data/geojson/sbsj/zonas/pbzph.geojson",
+      "category": "zonas-protecao",
+      "featureCount": 17
+    },
+    {
+      "dataset": "PBZPA SBSJ",
+      "source": "data/02-Dados Geo/pbzpa_SBSJ.kmz",
+      "target": "data/geojson/sbsj/zonas/pbzpa_sbsj.geojson",
+      "category": "zonas-protecao",
+      "featureCount": 188
+    },
+    {
+      "dataset": "PZPANA SBSJ",
+      "source": "data/02-Dados Geo/pzpana_SBSJ.kmz",
+      "target": "data/geojson/sbsj/zonas/pzpana_sbsj.geojson",
+      "category": "zonas-protecao",
+      "featureCount": 82
+    }
+  ]
+}

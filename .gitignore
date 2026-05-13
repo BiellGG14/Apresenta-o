@@ -1,2 +1,8 @@
 # Local UI captures
 *-screenshot.png
+
+# Fonte bruta local e relatório de referência
+SANDBOX___Report_Phase_01.pdf
+data/02-Dados Geo/
+__pycache__/
+*.pyc

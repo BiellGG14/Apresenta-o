@@ -5,6 +5,13 @@ Use esta pasta para manter os dados que alimentam o mapa interativo.
 ## Arquivo atual
 
 - `map-layers.js`: catálogo inicial de camadas, textos executivos, status e geometrias demonstrativas.
+- `geojson/sbsj/`: dados derivados e rastreáveis usados pelo mapa.
+
+## Fonte bruta local
+
+- `02-Dados Geo/`: pasta de origem adicionada a partir dos materiais do Marcelo.
+- Esta pasta não é consumida diretamente pelo mapa.
+- Quando um dado for aprovado para uso, gere uma cópia derivada em `geojson/sbsj/` ou na pasta temática correspondente.
 
 ## Próximos dados sugeridos
 

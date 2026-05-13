@@ -1,0 +1,7901 @@
+{
+  "type": "FeatureCollection",
+  "name": "PBZPA SBSJ",
+  "source": "data/02-Dados Geo/pbzpa_SBSJ.kmz",
+  "derivedFor": "Sandbox Sao Jose dos Campos",
+  "featureCount": 188,
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VOO VISUAL ÁREA 2",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8555708867,
+          -23.2847668519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 799,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8362314553,
+          -23.2010313119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 753,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.806393518,
+          -23.2292481343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 722,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8488657626,
+          -23.2133643732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 699,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8731620849,
+          -23.1918515871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 699,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8258661466,
+          -23.2343878119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 905,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8497792403,
+          -23.1485335692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 951,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8137131154,
+          -23.1810161686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 905,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.77992571859999,
+          -23.2130908105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VOO VISUAL ÁREA 1",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8551781,
+          -23.2624866786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VOO VISUAL ÁREA 3",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8681919962,
+          -23.3137286646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 753,4m",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.865616594,
+          -23.1753786371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HORIZONTAL EXTERNA",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7901613941,
+          -23.1074285593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 796,4 m",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7655759737,
+          -23.1159264296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 791,4 m",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8241144079,
+          -23.1898888095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CÔNICA",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8259757828,
+          -23.191389611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.838602325,
+          -23.2033271039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HORIZONTAL INTERNA",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8427618318,
+          -23.2029398919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9664176623,
+            -23.2272350918
+          ],
+          [
+            -45.8588341267,
+            -23.326088466
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8643145214,
+            -23.1323271762
+          ],
+          [
+            -45.7567270164,
+            -23.2311118049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9344542056,
+            -23.2153471386
+          ],
+          [
+            -45.8461406739,
+            -23.2964811819
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8769951461,
+            -23.161933949
+          ],
+          [
+            -45.7886797806,
+            -23.2430362353
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.87692038210001,
+            -23.1851819277
+          ],
+          [
+            -45.8138382584,
+            -23.2431170858
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9093015432,
+            -23.2152854408
+          ],
+          [
+            -45.84622015770001,
+            -23.2732333823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8721274469,
+            -23.2198013754
+          ],
+          [
+            -45.8535775382,
+            -23.2368401573
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8532675013,
+            -23.2365518552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8461679333,
+            -23.2430713614
+          ],
+          [
+            -45.846477971,
+            -23.2433596773
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7886797806,
+            -23.2430362353
+          ],
+          [
+            -45.8461406739,
+            -23.2964811819
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8138382584,
+            -23.2431170858
+          ],
+          [
+            -45.84622015770001,
+            -23.2732333823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8721274469,
+            -23.2198013754
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8532674319,
+            -23.2365519188
+          ],
+          [
+            -45.8535774689,
+            -23.236840221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8766690033,
+            -23.2150556944
+          ],
+          [
+            -45.8769790376,
+            -23.2153439512
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8769951461,
+            -23.161933949
+          ],
+          [
+            -45.9344542056,
+            -23.2153471386
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.87692038210001,
+            -23.1851819277
+          ],
+          [
+            -45.9093015432,
+            -23.2152854408
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8532675013,
+            -23.2365518552
+          ],
+          [
+            -45.8461679333,
+            -23.2430713614
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.846477971,
+            -23.2433596773
+          ],
+          [
+            -45.8535775382,
+            -23.2368401573
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8766690033,
+            -23.2150556944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line2",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8769790376,
+            -23.2153439512
+          ],
+          [
+            -45.8721274469,
+            -23.2198013754
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8876731712,
+            -23.2816517482
+          ],
+          [
+            -45.8861961262,
+            -23.282961846
+          ],
+          [
+            -45.88467045859999,
+            -23.284223512
+          ],
+          [
+            -45.88309802729999,
+            -23.2854352078
+          ],
+          [
+            -45.8814807486,
+            -23.2865954557
+          ],
+          [
+            -45.87982059350001,
+            -23.2877028407
+          ],
+          [
+            -45.8781195855,
+            -23.2887560124
+          ],
+          [
+            -45.87637979809999,
+            -23.28975368620001
+          ],
+          [
+            -45.8746033521,
+            -23.2906946455
+          ],
+          [
+            -45.8727924135,
+            -23.2915777425
+          ],
+          [
+            -45.87094919010001,
+            -23.2924019002
+          ],
+          [
+            -45.86907592949999,
+            -23.2931661133
+          ],
+          [
+            -45.8671749158,
+            -23.2938694497
+          ],
+          [
+            -45.86524846739999,
+            -23.2945110513
+          ],
+          [
+            -45.86329893350001,
+            -23.2950901357
+          ],
+          [
+            -45.8613286917,
+            -23.2956059963
+          ],
+          [
+            -45.8593401452,
+            -23.2960580039
+          ],
+          [
+            -45.8573357191,
+            -23.2964456071
+          ],
+          [
+            -45.8553178583,
+            -23.296768333
+          ],
+          [
+            -45.85328902420001,
+            -23.2970257878
+          ],
+          [
+            -45.8512516914,
+            -23.2972176574
+          ],
+          [
+            -45.8492083451,
+            -23.2973437078
+          ],
+          [
+            -45.84716147769999,
+            -23.297403785
+          ],
+          [
+            -45.8451135861,
+            -23.2973978156
+          ],
+          [
+            -45.8430671683,
+            -23.2973258069
+          ],
+          [
+            -45.8410247207,
+            -23.2971878467
+          ],
+          [
+            -45.8389887345,
+            -23.2969841031
+          ],
+          [
+            -45.83696169350001,
+            -23.2967148245
+          ],
+          [
+            -45.8349460701,
+            -23.2963803393
+          ],
+          [
+            -45.8329443229,
+            -23.2959810556
+          ],
+          [
+            -45.83095889359999,
+            -23.2955174601
+          ],
+          [
+            -45.8289922038,
+            -23.2949901183
+          ],
+          [
+            -45.8270466522,
+            -23.2943996734
+          ],
+          [
+            -45.8251246117,
+            -23.2937468454
+          ],
+          [
+            -45.8232284264,
+            -23.2930324306
+          ],
+          [
+            -45.82136040870001,
+            -23.2922573003
+          ],
+          [
+            -45.8195228366,
+            -23.2914223998
+          ],
+          [
+            -45.8177179508,
+            -23.2905287474
+          ],
+          [
+            -45.815947952,
+            -23.2895774329
+          ],
+          [
+            -45.8142149983,
+            -23.2885696165
+          ],
+          [
+            -45.81252120240001,
+            -23.2875065273
+          ],
+          [
+            -45.8108686291,
+            -23.2863894618
+          ],
+          [
+            -45.8092592929,
+            -23.2852197822
+          ],
+          [
+            -45.8076951553,
+            -23.283998915
+          ],
+          [
+            -45.80617812250001,
+            -23.2827283488
+          ],
+          [
+            -45.8047100432,
+            -23.2814096331
+          ],
+          [
+            -45.80329270619999,
+            -23.2800443758
+          ],
+          [
+            -45.8019278382,
+            -23.2786342418
+          ],
+          [
+            -45.800617102,
+            -23.2771809504
+          ],
+          [
+            -45.7993620939,
+            -23.2756862736
+          ],
+          [
+            -45.7981643424,
+            -23.2741520338
+          ],
+          [
+            -45.7970253058,
+            -23.2725801015
+          ],
+          [
+            -45.7959463708,
+            -23.2709723933
+          ],
+          [
+            -45.7949288506,
+            -23.2693308691
+          ],
+          [
+            -45.7939739835,
+            -23.2676575301
+          ],
+          [
+            -45.7930829313,
+            -23.2659544162
+          ],
+          [
+            -45.7922567776,
+            -23.2642236035
+          ],
+          [
+            -45.7914965271,
+            -23.2624672018
+          ],
+          [
+            -45.79080310389999,
+            -23.260687352
+          ],
+          [
+            -45.7901773506,
+            -23.2588862236
+          ],
+          [
+            -45.78962002709999,
+            -23.2570660118
+          ],
+          [
+            -45.7891318098,
+            -23.255228935
+          ],
+          [
+            -45.788713291,
+            -23.2533772321
+          ],
+          [
+            -45.7883649779,
+            -23.2515131598
+          ],
+          [
+            -45.78808729200001,
+            -23.24963898980001
+          ],
+          [
+            -45.7878805687,
+            -23.2477570057
+          ],
+          [
+            -45.78774505689999,
+            -23.245869501
+          ],
+          [
+            -45.7876809187,
+            -23.2439787755
+          ],
+          [
+            -45.7876882293,
+            -23.2420871329
+          ],
+          [
+            -45.7877669768,
+            -23.240196878
+          ],
+          [
+            -45.7879170622,
+            -23.2383103137
+          ],
+          [
+            -45.7881382996,
+            -23.2364297384
+          ],
+          [
+            -45.7884304166,
+            -23.2345574431
+          ],
+          [
+            -45.7887930542,
+            -23.23269570860001
+          ],
+          [
+            -45.7892257679,
+            -23.2308468027
+          ],
+          [
+            -45.7897280276,
+            -23.2290129776
+          ],
+          [
+            -45.7902992187,
+            -23.2271964668
+          ],
+          [
+            -45.79093864280001,
+            -23.2253994829
+          ],
+          [
+            -45.7916455182,
+            -23.2236242144
+          ],
+          [
+            -45.7924189815,
+            -23.2218728235
+          ],
+          [
+            -45.793258088,
+            -23.220147443
+          ],
+          [
+            -45.7941618135,
+            -23.2184501741
+          ],
+          [
+            -45.7951290548,
+            -23.2167830835
+          ],
+          [
+            -45.79615863189999,
+            -23.2151482014
+          ],
+          [
+            -45.79724928880001,
+            -23.2135475184
+          ],
+          [
+            -45.7983996953,
+            -23.2119829834
+          ],
+          [
+            -45.7996084486,
+            -23.2104565015
+          ],
+          [
+            -45.8008740751,
+            -23.208969931
+          ],
+          [
+            -45.8021950319,
+            -23.2075250819
+          ],
+          [
+            -45.8035697092,
+            -23.2061237131
+          ],
+          [
+            -45.80499643170001,
+            -23.2047675307
+          ],
+          [
+            -45.80499643170001,
+            -23.2047675307
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9842494622,
+            -23.3712902101
+          ],
+          [
+            -45.9793259462,
+            -23.3756601422
+          ],
+          [
+            -45.9742399024,
+            -23.3798686347
+          ],
+          [
+            -45.9689975299,
+            -23.3839105447
+          ],
+          [
+            -45.9636052204,
+            -23.3877809323
+          ],
+          [
+            -45.9580695507,
+            -23.3914750667
+          ],
+          [
+            -45.9523972747,
+            -23.3949884322
+          ],
+          [
+            -45.9465953148,
+            -23.3983167336
+          ],
+          [
+            -45.9406707537,
+            -23.4014559015
+          ],
+          [
+            -45.9346308256,
+            -23.4044020973
+          ],
+          [
+            -45.9284829074,
+            -23.4071517182
+          ],
+          [
+            -45.9222345095,
+            -23.4097014014
+          ],
+          [
+            -45.9158932664,
+            -23.4120480282
+          ],
+          [
+            -45.90946692789999,
+            -23.4141887282
+          ],
+          [
+            -45.90296334879999,
+            -23.4161208825
+          ],
+          [
+            -45.8963904795,
+            -23.4178421273
+          ],
+          [
+            -45.8897563566,
+            -23.4193503563
+          ],
+          [
+            -45.8830690922,
+            -23.420643724
+          ],
+          [
+            -45.8763368644,
+            -23.4217206475
+          ],
+          [
+            -45.869567907,
+            -23.4225798083
+          ],
+          [
+            -45.86277049940001,
+            -23.4232201547
+          ],
+          [
+            -45.85595295640001,
+            -23.4236409023
+          ],
+          [
+            -45.8491236176,
+            -23.4238415355
+          ],
+          [
+            -45.84229083729999,
+            -23.4238218078
+          ],
+          [
+            -45.8354629743,
+            -23.4235817424
+          ],
+          [
+            -45.8286483814,
+            -23.423121632
+          ],
+          [
+            -45.8218553948,
+            -23.42244203850001
+          ],
+          [
+            -45.8150923241,
+            -23.4215437922
+          ],
+          [
+            -45.8083674422,
+            -23.420427991
+          ],
+          [
+            -45.8016889744,
+            -23.4190959987
+          ],
+          [
+            -45.7950650888,
+            -23.4175494439
+          ],
+          [
+            -45.788503886,
+            -23.4157902172
+          ],
+          [
+            -45.782013389,
+            -23.4138204696
+          ],
+          [
+            -45.7756015334,
+            -23.4116426094
+          ],
+          [
+            -45.7692761576,
+            -23.4092592992
+          ],
+          [
+            -45.7630449929,
+            -23.4066734531
+          ],
+          [
+            -45.7569156544,
+            -23.4038882324
+          ],
+          [
+            -45.7508956312,
+            -23.4009070423
+          ],
+          [
+            -45.7449922772,
+            -23.3977335273
+          ],
+          [
+            -45.73921280219999,
+            -23.3943715668
+          ],
+          [
+            -45.7335642632,
+            -23.3908252705
+          ],
+          [
+            -45.7280535553,
+            -23.3870989731
+          ],
+          [
+            -45.7226874035,
+            -23.383197229
+          ],
+          [
+            -45.71747235429999,
+            -23.3791248066
+          ],
+          [
+            -45.7124147679,
+            -23.37488668270001
+          ],
+          [
+            -45.7075208104,
+            -23.3704880361
+          ],
+          [
+            -45.702796446,
+            -23.3659342413
+          ],
+          [
+            -45.69824742990001,
+            -23.3612308619
+          ],
+          [
+            -45.6938793014,
+            -23.3563836435
+          ],
+          [
+            -45.6896973771,
+            -23.3513985071
+          ],
+          [
+            -45.6857067441,
+            -23.3462815414
+          ],
+          [
+            -45.68191225459999,
+            -23.3410389956
+          ],
+          [
+            -45.6783185192,
+            -23.3356772714
+          ],
+          [
+            -45.6749299021,
+            -23.3302029153
+          ],
+          [
+            -45.67175051509999,
+            -23.3246226107
+          ],
+          [
+            -45.6687842135,
+            -23.3189431694
+          ],
+          [
+            -45.6660345907,
+            -23.31317152340001
+          ],
+          [
+            -45.6635049744,
+            -23.3073147166
+          ],
+          [
+            -45.6611984227,
+            -23.3013798955
+          ],
+          [
+            -45.6591177202,
+            -23.2953743013
+          ],
+          [
+            -45.65726537480001,
+            -23.2893052603
+          ],
+          [
+            -45.6556436151,
+            -23.2831801754
+          ],
+          [
+            -45.65425438720001,
+            -23.2770065167
+          ],
+          [
+            -45.6530993533,
+            -23.2707918129
+          ],
+          [
+            -45.6521798889,
+            -23.2645436413
+          ],
+          [
+            -45.6514970823,
+            -23.2582696192
+          ],
+          [
+            -45.6510517324,
+            -23.2519773942
+          ],
+          [
+            -45.6508443486,
+            -23.2456746354
+          ],
+          [
+            -45.6508751501,
+            -23.2393690232
+          ],
+          [
+            -45.6511440658,
+            -23.2330682407
+          ],
+          [
+            -45.6516507346,
+            -23.226779964
+          ],
+          [
+            -45.65239450579999,
+            -23.2205118529
+          ],
+          [
+            -45.6533744406,
+            -23.2142715416
+          ],
+          [
+            -45.65458931249999,
+            -23.2080666293
+          ],
+          [
+            -45.6560376099,
+            -23.2019046711
+          ],
+          [
+            -45.65771753749999,
+            -23.195793169
+          ],
+          [
+            -45.6596270188,
+            -23.1897395621
+          ],
+          [
+            -45.6617636988,
+            -23.1837512183
+          ],
+          [
+            -45.664124947,
+            -23.1778354252
+          ],
+          [
+            -45.6667078607,
+            -23.171999381
+          ],
+          [
+            -45.66950926860001,
+            -23.1662501859
+          ],
+          [
+            -45.6725257351,
+            -23.1605948337
+          ],
+          [
+            -45.6757535641,
+            -23.1550402029
+          ],
+          [
+            -45.679188804,
+            -23.1495930488
+          ],
+          [
+            -45.6828272523,
+            -23.1442599953
+          ],
+          [
+            -45.6866644612,
+            -23.1390475265
+          ],
+          [
+            -45.6906957426,
+            -23.1339619792
+          ],
+          [
+            -45.69491617439999,
+            -23.1290095353
+          ],
+          [
+            -45.6993206059,
+            -23.1241962141
+          ],
+          [
+            -45.7039036649,
+            -23.1195278651
+          ],
+          [
+            -45.7086597635,
+            -23.1150101611
+          ],
+          [
+            -45.7086597635,
+            -23.1150101611
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.846322952,
+            -23.2432155195
+          ],
+          [
+            -45.8973939172,
+            -23.2906825489
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8077624628,
+            -23.2786090897
+          ],
+          [
+            -45.8588341267,
+            -23.326088466
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9278943946,
+            -23.2626570963
+          ],
+          [
+            -45.8768240203,
+            -23.2151998229
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9664176623,
+            -23.2272350918
+          ],
+          [
+            -45.9153480825,
+            -23.1797901276
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8768240203,
+            -23.2151998229
+          ],
+          [
+            -45.8257897359,
+            -23.1677245904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9153480825,
+            -23.1797901276
+          ],
+          [
+            -45.8643145214,
+            -23.1323271762
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.795288133,
+            -23.1957305533
+          ],
+          [
+            -45.846322952,
+            -23.2432155195
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "VFR",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7567270164,
+            -23.2311118049
+          ],
+          [
+            -45.8077624628,
+            -23.2786090897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8492706722,
+            -23.1895743904
+          ],
+          [
+            -45.85025495680001,
+            -23.1887012279
+          ],
+          [
+            -45.8512715925,
+            -23.1878603467
+          ],
+          [
+            -45.8523193409,
+            -23.1870527708
+          ],
+          [
+            -45.8533969256,
+            -23.1862794834
+          ],
+          [
+            -45.854503034,
+            -23.185541426
+          ],
+          [
+            -45.8556363189,
+            -23.1848394974
+          ],
+          [
+            -45.85679540000001,
+            -23.18417455200001
+          ],
+          [
+            -45.85797886579999,
+            -23.1835473995
+          ],
+          [
+            -45.85918527490001,
+            -23.1829588035
+          ],
+          [
+            -45.8604131583,
+            -23.1824094804
+          ],
+          [
+            -45.8616610208,
+            -23.18190009910001
+          ],
+          [
+            -45.8629273429,
+            -23.1814312798
+          ],
+          [
+            -45.86421058280001,
+            -23.181003593
+          ],
+          [
+            -45.865509178,
+            -23.1806175596
+          ],
+          [
+            -45.8668215474,
+            -23.1802736494
+          ],
+          [
+            -45.8681460933,
+            -23.17997228100001
+          ],
+          [
+            -45.86948120300001,
+            -23.1797138214
+          ],
+          [
+            -45.8708252512,
+            -23.1794985851
+          ],
+          [
+            -45.8721766015,
+            -23.1793268342
+          ],
+          [
+            -45.8735336089,
+            -23.1791987776
+          ],
+          [
+            -45.8748946213,
+            -23.1791145712
+          ],
+          [
+            -45.87625798180001,
+            -23.1790743176
+          ],
+          [
+            -45.8776220308,
+            -23.1790780656
+          ],
+          [
+            -45.8789851076,
+            -23.1791258107
+          ],
+          [
+            -45.88034555299999,
+            -23.1792174947
+          ],
+          [
+            -45.8817017108,
+            -23.179353006
+          ],
+          [
+            -45.88305193,
+            -23.1795321794
+          ],
+          [
+            -45.8843945669,
+            -23.179754797
+          ],
+          [
+            -45.88572798690001,
+            -23.1800205875
+          ],
+          [
+            -45.88705056669999,
+            -23.1803292275
+          ],
+          [
+            -45.8883606962,
+            -23.1806803411
+          ],
+          [
+            -45.8896567803,
+            -23.1810735008
+          ],
+          [
+            -45.8909372411,
+            -23.181508228
+          ],
+          [
+            -45.8922005195,
+            -23.1819839933
+          ],
+          [
+            -45.8934450775,
+            -23.1825002176
+          ],
+          [
+            -45.89466939960001,
+            -23.1830562723
+          ],
+          [
+            -45.89587199500001,
+            -23.1836514804
+          ],
+          [
+            -45.8970513995,
+            -23.18428511720001
+          ],
+          [
+            -45.8982061766,
+            -23.1849564112
+          ],
+          [
+            -45.8993349202,
+            -23.1856645451
+          ],
+          [
+            -45.9004362556,
+            -23.1864086567
+          ],
+          [
+            -45.9015088414,
+            -23.18718783990001
+          ],
+          [
+            -45.9025513712,
+            -23.1880011461
+          ],
+          [
+            -45.9035625751,
+            -23.1888475849
+          ],
+          [
+            -45.9045412213,
+            -23.1897261257
+          ],
+          [
+            -45.9054861176,
+            -23.1906356987
+          ],
+          [
+            -45.9063961126,
+            -23.1915751964
+          ],
+          [
+            -45.9072700978,
+            -23.1925434747
+          ],
+          [
+            -45.90810700790001,
+            -23.1935393545
+          ],
+          [
+            -45.9089058231,
+            -23.1945616232
+          ],
+          [
+            -45.90966556990001,
+            -23.1956090357
+          ],
+          [
+            -45.910385322,
+            -23.1966803167
+          ],
+          [
+            -45.911064202,
+            -23.1977741614
+          ],
+          [
+            -45.9117013823,
+            -23.1988892377
+          ],
+          [
+            -45.9122960856,
+            -23.2000241876
+          ],
+          [
+            -45.9128475868,
+            -23.2011776289
+          ],
+          [
+            -45.9133552131,
+            -23.2023481567
+          ],
+          [
+            -45.9138183449,
+            -23.2035343454
+          ],
+          [
+            -45.9142364171,
+            -23.2047347503
+          ],
+          [
+            -45.91460891930001,
+            -23.2059479091
+          ],
+          [
+            -45.9149353964,
+            -23.2071723442
+          ],
+          [
+            -45.9152154497,
+            -23.2084065641
+          ],
+          [
+            -45.9154487366,
+            -23.2096490655
+          ],
+          [
+            -45.9156349717,
+            -23.21089833470001
+          ],
+          [
+            -45.91577392679999,
+            -23.2121528499
+          ],
+          [
+            -45.91586543130001,
+            -23.2134110829
+          ],
+          [
+            -45.9159093725,
+            -23.2146715008
+          ],
+          [
+            -45.9159056954,
+            -23.2159325681
+          ],
+          [
+            -45.9158544032,
+            -23.2171927484
+          ],
+          [
+            -45.915755557,
+            -23.2184505064
+          ],
+          [
+            -45.9156092759,
+            -23.2197043095
+          ],
+          [
+            -45.9154157369,
+            -23.2209526303
+          ],
+          [
+            -45.9151751744,
+            -23.2221939476
+          ],
+          [
+            -45.9148878802,
+            -23.2234267489
+          ],
+          [
+            -45.9145542031,
+            -23.2246495321
+          ],
+          [
+            -45.91417454849999,
+            -23.2258608071
+          ],
+          [
+            -45.9137493778,
+            -23.2270590979
+          ],
+          [
+            -45.91327920780001,
+            -23.2282429442
+          ],
+          [
+            -45.9127646103,
+            -23.2294109033
+          ],
+          [
+            -45.9122062113,
+            -23.2305615518
+          ],
+          [
+            -45.91160469009999,
+            -23.2316934875
+          ],
+          [
+            -45.9109607789,
+            -23.2328053308
+          ],
+          [
+            -45.9102752612,
+            -23.2338957265
+          ],
+          [
+            -45.9095489717,
+            -23.2349633458
+          ],
+          [
+            -45.9087827944,
+            -23.2360068873
+          ],
+          [
+            -45.9079776625,
+            -23.2370250791
+          ],
+          [
+            -45.9071345563,
+            -23.2380166801
+          ],
+          [
+            -45.9062545027,
+            -23.2389804816
+          ],
+          [
+            -45.9053385736,
+            -23.2399153088
+          ],
+          [
+            -45.90438788480001,
+            -23.2408200221
+          ],
+          [
+            -45.90438788480001,
+            -23.2408200221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8738871285,
+            -23.2688409823
+          ],
+          [
+            -45.87290243329999,
+            -23.2697142971
+          ],
+          [
+            -45.8718853358,
+            -23.2705553241
+          ],
+          [
+            -45.8708370753,
+            -23.271363038
+          ],
+          [
+            -45.86975892930001,
+            -23.2721364542
+          ],
+          [
+            -45.8686522114,
+            -23.2728746298
+          ],
+          [
+            -45.8675182705,
+            -23.2735766647
+          ],
+          [
+            -45.86635848849999,
+            -23.2742417032
+          ],
+          [
+            -45.8651742791,
+            -23.2748689344
+          ],
+          [
+            -45.8639670856,
+            -23.2754575936
+          ],
+          [
+            -45.8627383796,
+            -23.276006963
+          ],
+          [
+            -45.86148965879999,
+            -23.2765163729
+          ],
+          [
+            -45.8602224455,
+            -23.2769852021
+          ],
+          [
+            -45.8589382846,
+            -23.2774128789
+          ],
+          [
+            -45.8576387415,
+            -23.2777988819
+          ],
+          [
+            -45.85632540080001,
+            -23.2781427405
+          ],
+          [
+            -45.8549998635,
+            -23.2784440352
+          ],
+          [
+            -45.85366374579999,
+            -23.2787023988
+          ],
+          [
+            -45.8523186768,
+            -23.2789175161
+          ],
+          [
+            -45.8509662965,
+            -23.2790891249
+          ],
+          [
+            -45.8496082539,
+            -23.2792170158
+          ],
+          [
+            -45.8482462048,
+            -23.2793010328
+          ],
+          [
+            -45.84688181009999,
+            -23.2793410736
+          ],
+          [
+            -45.8455167332,
+            -23.2793370892
+          ],
+          [
+            -45.84415263890001,
+            -23.2792890844
+          ],
+          [
+            -45.8427911902,
+            -23.2791971177
+          ],
+          [
+            -45.8414340473,
+            -23.2790613013
+          ],
+          [
+            -45.840082865,
+            -23.2788818007
+          ],
+          [
+            -45.8387392908,
+            -23.2786588347
+          ],
+          [
+            -45.8374049628,
+            -23.2783926752
+          ],
+          [
+            -45.8360815081,
+            -23.2780836466
+          ],
+          [
+            -45.8347705402,
+            -23.2777321257
+          ],
+          [
+            -45.8334736576,
+            -23.2773385411
+          ],
+          [
+            -45.8321924413,
+            -23.2769033726
+          ],
+          [
+            -45.83092845339999,
+            -23.2764271508
+          ],
+          [
+            -45.8296832348,
+            -23.2759104563
+          ],
+          [
+            -45.8284583037,
+            -23.275353919
+          ],
+          [
+            -45.8272551532,
+            -23.2747582175
+          ],
+          [
+            -45.82607524989999,
+            -23.2741240779
+          ],
+          [
+            -45.8249200322,
+            -23.2734522735
+          ],
+          [
+            -45.823790908,
+            -23.2727436232
+          ],
+          [
+            -45.8226892536,
+            -23.271998991
+          ],
+          [
+            -45.8216164116,
+            -23.2712192846
+          ],
+          [
+            -45.8205736895,
+            -23.2704054547
+          ],
+          [
+            -45.8195623579,
+            -23.2695584933
+          ],
+          [
+            -45.81858364910001,
+            -23.2686794329
+          ],
+          [
+            -45.8176387557,
+            -23.2677693451
+          ],
+          [
+            -45.8167288288,
+            -23.2668293394
+          ],
+          [
+            -45.8158549769,
+            -23.2658605616
+          ],
+          [
+            -45.8150182645,
+            -23.2648641926
+          ],
+          [
+            -45.8142197107,
+            -23.263841447
+          ],
+          [
+            -45.813460288,
+            -23.2627935714
+          ],
+          [
+            -45.81274092120001,
+            -23.2617218431
+          ],
+          [
+            -45.8120624861,
+            -23.2606275683
+          ],
+          [
+            -45.81142580869999,
+            -23.2595120808
+          ],
+          [
+            -45.8108316639,
+            -23.2583767401
+          ],
+          [
+            -45.8102807749,
+            -23.25722293020001
+          ],
+          [
+            -45.8097738118,
+            -23.256052057
+          ],
+          [
+            -45.8093113915,
+            -23.2548655477
+          ],
+          [
+            -45.8088940763,
+            -23.2536648481
+          ],
+          [
+            -45.8085223735,
+            -23.2524514217
+          ],
+          [
+            -45.808196735,
+            -23.251226747
+          ],
+          [
+            -45.8079175562,
+            -23.2499923166
+          ],
+          [
+            -45.8076851761,
+            -23.2487496345
+          ],
+          [
+            -45.80749987659999,
+            -23.2475002151
+          ],
+          [
+            -45.8073618821,
+            -23.2462455809
+          ],
+          [
+            -45.80727135940001,
+            -23.2449872605
+          ],
+          [
+            -45.80722841760001,
+            -23.24372678710001
+          ],
+          [
+            -45.8072331075,
+            -23.2424656966
+          ],
+          [
+            -45.8072854222,
+            -23.2412055253
+          ],
+          [
+            -45.8073852966,
+            -23.2399478086
+          ],
+          [
+            -45.8075326076,
+            -23.2386940788
+          ],
+          [
+            -45.80772717439999,
+            -23.2374458632
+          ],
+          [
+            -45.8079687588,
+            -23.2362046826
+          ],
+          [
+            -45.80825706500001,
+            -23.2349720488
+          ],
+          [
+            -45.8085917407,
+            -23.2337494635
+          ],
+          [
+            -45.8089723768,
+            -23.2325384159
+          ],
+          [
+            -45.8093985084,
+            -23.2313403813
+          ],
+          [
+            -45.8098696153,
+            -23.2301568188
+          ],
+          [
+            -45.8103851224,
+            -23.2289891702
+          ],
+          [
+            -45.8109444008,
+            -23.2278388575
+          ],
+          [
+            -45.81154676800001,
+            -23.226707282
+          ],
+          [
+            -45.8121914894,
+            -23.2255958217
+          ],
+          [
+            -45.8128777786,
+            -23.2245058303
+          ],
+          [
+            -45.8136047989,
+            -23.2234386353
+          ],
+          [
+            -45.8143716638,
+            -23.2223955364
+          ],
+          [
+            -45.81517743860001,
+            -23.2213778038
+          ],
+          [
+            -45.816021141,
+            -23.2203866771
+          ],
+          [
+            -45.8169017428,
+            -23.219423363
+          ],
+          [
+            -45.81781817080001,
+            -23.2184890347
+          ],
+          [
+            -45.8187693084,
+            -23.21758482990001
+          ],
+          [
+            -45.8187693084,
+            -23.21758482990001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8492706722,
+            -23.1895743904
+          ],
+          [
+            -45.8187693084,
+            -23.21758482990001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HOR__INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line1",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.90438788480001,
+            -23.2408200221
+          ],
+          [
+            -45.8738871285,
+            -23.2688409824
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.83549793720001,
+            -23.1767597173
+          ],
+          [
+            -45.8369743615,
+            -23.1754500986
+          ],
+          [
+            -45.8384992933,
+            -23.1741889018
+          ],
+          [
+            -45.84007087500001,
+            -23.1729776621
+          ],
+          [
+            -45.8416871924,
+            -23.1718178539
+          ],
+          [
+            -45.8433462768,
+            -23.1707108889
+          ],
+          [
+            -45.8450461078,
+            -23.1696581145
+          ],
+          [
+            -45.8467846155,
+            -23.1686608119
+          ],
+          [
+            -45.8485596829,
+            -23.167720195
+          ],
+          [
+            -45.8503691489,
+            -23.1668374085
+          ],
+          [
+            -45.85221081049999,
+            -23.1660135269
+          ],
+          [
+            -45.8540824258,
+            -23.1652495527
+          ],
+          [
+            -45.8559817165,
+            -23.1645464157
+          ],
+          [
+            -45.85790637049999,
+            -23.1639049716
+          ],
+          [
+            -45.85985404540001,
+            -23.1633260008
+          ],
+          [
+            -45.8618223705,
+            -23.162810208
+          ],
+          [
+            -45.8638089503,
+            -23.1623582207
+          ],
+          [
+            -45.865811367,
+            -23.1619705889
+          ],
+          [
+            -45.8678271838,
+            -23.1616477843
+          ],
+          [
+            -45.8698539473,
+            -23.1613901995
+          ],
+          [
+            -45.8718891913,
+            -23.1611981481
+          ],
+          [
+            -45.873930439,
+            -23.1610718634
+          ],
+          [
+            -45.8759752064,
+            -23.1610114993
+          ],
+          [
+            -45.8780210053,
+            -23.161017129
+          ],
+          [
+            -45.8800653462,
+            -23.1610887456
+          ],
+          [
+            -45.8821057413,
+            -23.1612262618
+          ],
+          [
+            -45.8841397078,
+            -23.1614295103
+          ],
+          [
+            -45.88616477059999,
+            -23.1616982435
+          ],
+          [
+            -45.8881784653,
+            -23.1620321344
+          ],
+          [
+            -45.8901783414,
+            -23.1624307765
+          ],
+          [
+            -45.8921619651,
+            -23.1628936848
+          ],
+          [
+            -45.8941269224,
+            -23.1634202956
+          ],
+          [
+            -45.896070822,
+            -23.1640099681
+          ],
+          [
+            -45.8979912978,
+            -23.1646619847
+          ],
+          [
+            -45.89988601250001,
+            -23.1653755517
+          ],
+          [
+            -45.90175266,
+            -23.1661498006
+          ],
+          [
+            -45.9035889679,
+            -23.1669837891
+          ],
+          [
+            -45.9053927011,
+            -23.1678765021
+          ],
+          [
+            -45.9071616637,
+            -23.1688268532
+          ],
+          [
+            -45.908893702,
+            -23.1698336854
+          ],
+          [
+            -45.9105867072,
+            -23.1708957735
+          ],
+          [
+            -45.9122386179,
+            -23.1720118246
+          ],
+          [
+            -45.9138474225,
+            -23.1731804802
+          ],
+          [
+            -45.91541116180001,
+            -23.1744003179
+          ],
+          [
+            -45.91692793109999,
+            -23.1756698528
+          ],
+          [
+            -45.9183958829,
+            -23.1769875394
+          ],
+          [
+            -45.9198132289,
+            -23.1783517738
+          ],
+          [
+            -45.9211782423,
+            -23.1797608953
+          ],
+          [
+            -45.9224892599,
+            -23.1812131883
+          ],
+          [
+            -45.92374468380001,
+            -23.1827068849
+          ],
+          [
+            -45.92494298399999,
+            -23.1842401665
+          ],
+          [
+            -45.9260826996,
+            -23.1858111664
+          ],
+          [
+            -45.9271624411,
+            -23.187417972
+          ],
+          [
+            -45.9281808916,
+            -23.1890586268
+          ],
+          [
+            -45.9291368091,
+            -23.1907311332
+          ],
+          [
+            -45.9300290271,
+            -23.1924334546
+          ],
+          [
+            -45.9308564568,
+            -23.1941635182
+          ],
+          [
+            -45.93161808839999,
+            -23.1959192172
+          ],
+          [
+            -45.9323129916,
+            -23.1976984137
+          ],
+          [
+            -45.9329403177,
+            -23.19949894080001
+          ],
+          [
+            -45.9334992999,
+            -23.2013186058
+          ],
+          [
+            -45.9339892548,
+            -23.2031551926
+          ],
+          [
+            -45.9344095827,
+            -23.2050064642
+          ],
+          [
+            -45.9347597688,
+            -23.2068701657
+          ],
+          [
+            -45.9350393837,
+            -23.2087440272
+          ],
+          [
+            -45.93524808390001,
+            -23.2106257661
+          ],
+          [
+            -45.9353856121,
+            -23.21251309
+          ],
+          [
+            -45.9354517978,
+            -23.2144037
+          ],
+          [
+            -45.9354465574,
+            -23.2162952927
+          ],
+          [
+            -45.9353698943,
+            -23.2181855637
+          ],
+          [
+            -45.9352218988,
+            -23.2200722099
+          ],
+          [
+            -45.9350027482,
+            -23.2219529327
+          ],
+          [
+            -45.9347127065,
+            -23.2238254404
+          ],
+          [
+            -45.93435212430001,
+            -23.2256874515
+          ],
+          [
+            -45.933921438,
+            -23.2275366969
+          ],
+          [
+            -45.93342116940001,
+            -23.2293709232
+          ],
+          [
+            -45.93285192540001,
+            -23.2311878951
+          ],
+          [
+            -45.9322143969,
+            -23.2329853982
+          ],
+          [
+            -45.9315093581,
+            -23.2347612419
+          ],
+          [
+            -45.9307376657,
+            -23.2365132616
+          ],
+          [
+            -45.92990025760001,
+            -23.2382393221
+          ],
+          [
+            -45.9289981519,
+            -23.2399373192
+          ],
+          [
+            -45.9280324458,
+            -23.2416051834
+          ],
+          [
+            -45.92700431400001,
+            -23.2432408814
+          ],
+          [
+            -45.92591500770001,
+            -23.2448424193
+          ],
+          [
+            -45.9247658526,
+            -23.2464078446
+          ],
+          [
+            -45.9235582475,
+            -23.2479352489
+          ],
+          [
+            -45.92229366260001,
+            -23.24942277
+          ],
+          [
+            -45.92097363799999,
+            -23.2508685942
+          ],
+          [
+            -45.9195997811,
+            -23.2522709588
+          ],
+          [
+            -45.9181737654,
+            -23.2536281537
+          ],
+          [
+            -45.9181737654,
+            -23.2536281537
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.80499643170001,
+            -23.2047675307
+          ],
+          [
+            -45.83549793720001,
+            -23.1767597173
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "CÔNICA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9181737654,
+            -23.2536281537
+          ],
+          [
+            -45.8876731712,
+            -23.2816517482
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.73916214600001,
+            -23.0870206849
+          ],
+          [
+            -45.7440834817,
+            -23.0826581995
+          ],
+          [
+            -45.7491660647,
+            -23.0784571169
+          ],
+          [
+            -45.7544037054,
+            -23.0744225404
+          ],
+          [
+            -45.75979002769999,
+            -23.0705593707
+          ],
+          [
+            -45.7653184766,
+            -23.0668722996
+          ],
+          [
+            -45.7709823263,
+            -23.0633658047
+          ],
+          [
+            -45.77677468789999,
+            -23.0600441439
+          ],
+          [
+            -45.7826885183,
+            -23.0569113504
+          ],
+          [
+            -45.7887166285,
+            -23.0539712276
+          ],
+          [
+            -45.7948516919,
+            -23.0512273447
+          ],
+          [
+            -45.8010862538,
+            -23.0486830323
+          ],
+          [
+            -45.8074127401,
+            -23.0463413787
+          ],
+          [
+            -45.8138234661,
+            -23.0442052257
+          ],
+          [
+            -45.8203106462,
+            -23.0422771657
+          ],
+          [
+            -45.8268664031,
+            -23.0405595381
+          ],
+          [
+            -45.8334827773,
+            -23.0390544271
+          ],
+          [
+            -45.8401517366,
+            -23.0377636586
+          ],
+          [
+            -45.8468651858,
+            -23.0366887982
+          ],
+          [
+            -45.85361497640001,
+            -23.0358311496
+          ],
+          [
+            -45.8603929164,
+            -23.0351917527
+          ],
+          [
+            -45.8671907801,
+            -23.0347713825
+          ],
+          [
+            -45.8740003179,
+            -23.0345705481
+          ],
+          [
+            -45.88081326650001,
+            -23.0345894924
+          ],
+          [
+            -45.8876213583,
+            -23.0348281912
+          ],
+          [
+            -45.8944163319,
+            -23.0352863539
+          ],
+          [
+            -45.90118994149999,
+            -23.0359634234
+          ],
+          [
+            -45.907933967,
+            -23.036858577
+          ],
+          [
+            -45.91464022389999,
+            -23.03797072720001
+          ],
+          [
+            -45.9213005732,
+            -23.03929852330001
+          ],
+          [
+            -45.9279069308,
+            -23.0408403528
+          ],
+          [
+            -45.9344512777,
+            -23.0425943433
+          ],
+          [
+            -45.9409256691,
+            -23.0445583649
+          ],
+          [
+            -45.94732224429999,
+            -23.0467300328
+          ],
+          [
+            -45.95363323630001,
+            -23.0491067099
+          ],
+          [
+            -45.9598509806,
+            -23.0516855104
+          ],
+          [
+            -45.96596792470001,
+            -23.0544633028
+          ],
+          [
+            -45.9719766374,
+            -23.0574367139
+          ],
+          [
+            -45.9778698175,
+            -23.0606021329
+          ],
+          [
+            -45.9836403025,
+            -23.0639557158
+          ],
+          [
+            -45.9892810777,
+            -23.06749338970001
+          ],
+          [
+            -45.9947852839,
+            -23.0712108581
+          ],
+          [
+            -46.0001462266,
+            -23.0751036057
+          ],
+          [
+            -46.00535738350001,
+            -23.0791669041
+          ],
+          [
+            -46.0104124125,
+            -23.0833958174
+          ],
+          [
+            -46.0153051595,
+            -23.0877852082
+          ],
+          [
+            -46.0200296658,
+            -23.0923297436
+          ],
+          [
+            -46.0245801754,
+            -23.097023902
+          ],
+          [
+            -46.028951142,
+            -23.1018619794
+          ],
+          [
+            -46.0331372356,
+            -23.1068380962
+          ],
+          [
+            -46.0371333494,
+            -23.1119462048
+          ],
+          [
+            -46.0409346056,
+            -23.1171800965
+          ],
+          [
+            -46.0445363617,
+            -23.1225334089
+          ],
+          [
+            -46.0479342161,
+            -23.1279996339
+          ],
+          [
+            -46.0511240135,
+            -23.1335721255
+          ],
+          [
+            -46.05410185,
+            -23.13924410750001
+          ],
+          [
+            -46.05686407809999,
+            -23.1450086823
+          ],
+          [
+            -46.05940731120001,
+            -23.1508588385
+          ],
+          [
+            -46.0617284276,
+            -23.1567874601
+          ],
+          [
+            -46.0638245748,
+            -23.1627873345
+          ],
+          [
+            -46.0656931726,
+            -23.1688511618
+          ],
+          [
+            -46.0673319168,
+            -23.174971563
+          ],
+          [
+            -46.068738782,
+            -23.1811410896
+          ],
+          [
+            -46.0699120242,
+            -23.1873522323
+          ],
+          [
+            -46.070850183,
+            -23.19359743
+          ],
+          [
+            -46.0715520835,
+            -23.1998690793
+          ],
+          [
+            -46.0720168383,
+            -23.2061595434
+          ],
+          [
+            -46.072243848,
+            -23.2124611618
+          ],
+          [
+            -46.07223280269999,
+            -23.2187662591
+          ],
+          [
+            -46.0719836825,
+            -23.2250671547
+          ],
+          [
+            -46.07149675720001,
+            -23.2313561721
+          ],
+          [
+            -46.0707725867,
+            -23.2376256482
+          ],
+          [
+            -46.0698120202,
+            -23.2438679425
+          ],
+          [
+            -46.0686161952,
+            -23.2500754467
+          ],
+          [
+            -46.0671865368,
+            -23.2562405939
+          ],
+          [
+            -46.0655247554,
+            -23.2623558675
+          ],
+          [
+            -46.0636328454,
+            -23.2684138111
+          ],
+          [
+            -46.0615130825,
+            -23.2744070367
+          ],
+          [
+            -46.0591680213,
+            -23.2803282346
+          ],
+          [
+            -46.0566004923,
+            -23.2861701817
+          ],
+          [
+            -46.05381359849999,
+            -23.2919257506
+          ],
+          [
+            -46.05081071159999,
+            -23.2975879186
+          ],
+          [
+            -46.04759546850001,
+            -23.3031497757
+          ],
+          [
+            -46.0441717666,
+            -23.3086045337
+          ],
+          [
+            -46.040543759,
+            -23.3139455339
+          ],
+          [
+            -46.0367158499,
+            -23.3191662559
+          ],
+          [
+            -46.03269268940001,
+            -23.3242603252
+          ],
+          [
+            -46.0284791672,
+            -23.3292215212
+          ],
+          [
+            -46.0240804076,
+            -23.3340437848
+          ],
+          [
+            -46.0195017627,
+            -23.3387212258
+          ],
+          [
+            -46.01474880589999,
+            -23.3432481303
+          ],
+          [
+            -46.01474880589999,
+            -23.3432481303
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9842494622,
+            -23.3712902101
+          ],
+          [
+            -46.01474880589999,
+            -23.3432481303
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "HORIZONTAL_EXTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_2.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line3",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7086597635,
+            -23.1150101611
+          ],
+          [
+            -45.73916214600001,
+            -23.0870206849
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4400m X 45m",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8630750323,
+          -23.2279068773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4520m X 300m",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8639678623,
+          -23.2287806996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FAIXA DE PISTA",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8638882432,
+          -23.2286536259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 2",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8599928999,
+          -23.2245758667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 1",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8793739325,
+          -23.2063784142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 6",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8864368264,
+          -23.2130711876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 5",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8670161377,
+          -23.2305055255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 3",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8420741815,
+          -23.2421601782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO 4",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.84759740469999,
+          -23.2473668419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "34",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8535442502,
+          -23.23667540470001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 646,4m",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8460652882,
+          -23.2440945364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "16",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8718945831,
+          -23.219634312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 619,2m",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8776511727,
+          -23.2151092882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 15%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8793376719,
+          -23.2148719165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 22%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.87726521600001,
+          -23.2129608734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APROXIMAÇÃO 16",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9607627266,
+          -23.1380087771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 2,5%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9126831708,
+          -23.1823592232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 2,0%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.89413227269999,
+          -23.1996494184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 679,2 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9008409077,
+          -23.1977498117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 769,2 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9835924283,
+          -23.1209946699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 919,2 m",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.98231525560001,
+          -23.1221662233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DECOLAGEM 34 G.V. 2%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9378317653,
+          -23.1596638802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 15,0%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8470595696,
+          -23.2449043155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 15,4%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.84455384499999,
+          -23.2427362318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 12,5%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8463708151,
+          -23.2442383492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 12,5%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8453250852,
+          -23.2432689104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 946,4 m",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7441709343,
+          -23.340593825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APROXIMAÇÃO 34",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7710878614,
+          -23.3125400256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 2,5%%%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.81339870560001,
+          -23.2734593634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 2,0%",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8386924787,
+          -23.2506227364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 796,4 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7427835743,
+          -23.3420924946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 796,4 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.80133095039999,
+          -23.2888873113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 706,4 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8263907347,
+          -23.2656155884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 769,2 m",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.92548114440001,
+          -23.1746423159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 14,3%",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8555139992,
+          -23.2298873802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8587593801,
+          -23.2237750785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO INTERNA",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8690158484,
+          -23.2200307426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 33,3%",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8656910951,
+          -23.2231679996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRANSIÇÃO INTERNA",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8717789971,
+          -23.2224914274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APROXIMAÇÃO INTERNA 16",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8811433273,
+          -23.2108783285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 2,0%",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8808892903,
+          -23.2119709003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 637,2 m",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8836231772,
+          -23.2095270882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.86472279560001,
+          -23.2226461177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DECOLAGEM 16 G.V.2%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.7939622582,
+          -23.2924257884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 12,5%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8790090007,
+          -23.2144790737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.L. 12,5%",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.87772815859999,
+          -23.2132852992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8677552609,
+          -23.2317763568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8949322726,
+          -23.1865970753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.9066045316,
+          -23.1973596062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8280453792,
+          -23.2532139584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8353915692,
+          -23.2601184748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G.V. 33,3%",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.86836559489999,
+          -23.2257093961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. 691,4 m",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8688784416,
+          -23.2264767711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POUSO INTERROMPIDO 16",
+        "description": "POUSO_INTERROMPIDO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Point Features"
+        ],
+        "styleUrl": "#point10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.8523525591,
+          -23.2368395973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84487348850001,
+            -23.2426364534
+          ],
+          [
+            -45.8469404068,
+            -23.2445585647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8268841034,
+            -23.2547400315
+          ],
+          [
+            -45.8336636292,
+            -23.26104522050001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7248822473,
+            -23.3232893438
+          ],
+          [
+            -45.75836732100001,
+            -23.354449447
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line30",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8782733108,
+            -23.2157786011
+          ],
+          [
+            -45.8469404069,
+            -23.2445585647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line30",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8762064158,
+            -23.213856895
+          ],
+          [
+            -45.84487348850001,
+            -23.2426364534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8721274469,
+            -23.2198013754
+          ],
+          [
+            -45.8535775382,
+            -23.2368401573
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8532675013,
+            -23.2365518552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8461679333,
+            -23.2430713614
+          ],
+          [
+            -45.846477971,
+            -23.2433596773
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line30",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84487348850001,
+            -23.2426364534
+          ],
+          [
+            -45.8469404069,
+            -23.2445585647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8721274469,
+            -23.2198013754
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8532674319,
+            -23.2365519188
+          ],
+          [
+            -45.8535774689,
+            -23.236840221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8766690033,
+            -23.2150556944
+          ],
+          [
+            -45.8769790376,
+            -23.2153439512
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8768264781,
+            -23.2144334099
+          ],
+          [
+            -45.8776532361,
+            -23.2152020923
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "FAIXA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line30",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8762064158,
+            -23.213856895
+          ],
+          [
+            -45.8782733108,
+            -23.2157786011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8532675013,
+            -23.2365518552
+          ],
+          [
+            -45.8461679333,
+            -23.2430713614
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.846477971,
+            -23.2433596773
+          ],
+          [
+            -45.8535775382,
+            -23.2368401573
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.871817412,
+            -23.2195131093
+          ],
+          [
+            -45.8766690033,
+            -23.2150556944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "AD",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8769790376,
+            -23.2153439512
+          ],
+          [
+            -45.8721274469,
+            -23.2198013754
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8292373177,
+            -23.2665405363
+          ],
+          [
+            -45.8208869127,
+            -23.2587741162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8292373177,
+            -23.2665405363
+          ],
+          [
+            -45.8469404069,
+            -23.2445585647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84487348850001,
+            -23.2426364534
+          ],
+          [
+            -45.7248822473,
+            -23.3232893438
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8079860129,
+            -23.2929164054
+          ],
+          [
+            -45.79209532160001,
+            -23.2781346463
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7583673211,
+            -23.3544494471
+          ],
+          [
+            -45.8079860129,
+            -23.2929164054
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8079860129,
+            -23.2929164054
+          ],
+          [
+            -45.8292373177,
+            -23.2665405363
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.87620641589999,
+            -23.2138568951
+          ],
+          [
+            -45.8782733108,
+            -23.215778601
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9573601531,
+            -23.0971810401
+          ],
+          [
+            -45.9976608853,
+            -23.1346291654
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9021624748,
+            -23.1995556547
+          ],
+          [
+            -45.89244824239999,
+            -23.1905248508
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9061440523,
+            -23.1970057736
+          ],
+          [
+            -45.89508972119999,
+            -23.1867293564
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.93082177949999,
+            -23.1800835277
+          ],
+          [
+            -45.9119311104,
+            -23.162524327
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8465270185,
+            -23.2441741448
+          ],
+          [
+            -45.84528686739999,
+            -23.243020878
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7459636191,
+            -23.342909564
+          ],
+          [
+            -45.7376956761,
+            -23.3352157227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.81675232380001,
+            -23.2779985886
+          ],
+          [
+            -45.8465270185,
+            -23.2441741448
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84528686739999,
+            -23.243020878
+          ],
+          [
+            -45.8084845572,
+            -23.2703084193
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.7459636191,
+            -23.342909564
+          ],
+          [
+            -45.81675232380001,
+            -23.2779985886
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8084845572,
+            -23.2703084193
+          ],
+          [
+            -45.7376956761,
+            -23.3352157227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8778599271,
+            -23.2153942622
+          ],
+          [
+            -45.87661979010001,
+            -23.2142412386
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9852583982,
+            -23.1231079748
+          ],
+          [
+            -45.9769911699,
+            -23.1154265145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.91463290260001,
+            -23.1880911689
+          ],
+          [
+            -45.8778599271,
+            -23.2153942622
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.87661979010001,
+            -23.2142412386
+          ],
+          [
+            -45.9063654284,
+            -23.1804060639
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9852583982,
+            -23.1231079748
+          ],
+          [
+            -45.91463290260001,
+            -23.1880911689
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "DECOLAGEM",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line5",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.9063654284,
+            -23.1804060639
+          ],
+          [
+            -45.9769911699,
+            -23.1154265145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8776532361,
+            -23.2152020923
+          ],
+          [
+            -45.8838904863,
+            -23.2094708834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8830637302,
+            -23.2087022332
+          ],
+          [
+            -45.8768264781,
+            -23.2144334099
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8838904863,
+            -23.2094708834
+          ],
+          [
+            -45.8830637302,
+            -23.2087022332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8674605635,
+            -23.2154619707
+          ],
+          [
+            -45.8671332789,
+            -23.2157982619
+          ],
+          [
+            -45.8668069566,
+            -23.2161354486
+          ],
+          [
+            -45.8664791865,
+            -23.21647129
+          ],
+          [
+            -45.8661523793,
+            -23.2168080277
+          ],
+          [
+            -45.865824606,
+            -23.2171438678
+          ],
+          [
+            -45.8654980359,
+            -23.2174808277
+          ],
+          [
+            -45.8651705012,
+            -23.2178168914
+          ],
+          [
+            -45.8648439279,
+            -23.21815385
+          ],
+          [
+            -45.8645156664,
+            -23.2184892398
+          ],
+          [
+            -45.8641890899,
+            -23.2188261971
+          ],
+          [
+            -45.8638601032,
+            -23.2191609142
+          ],
+          [
+            -45.8635347276,
+            -23.21949899000001
+          ],
+          [
+            -45.863207905,
+            -23.2198357212
+          ],
+          [
+            -45.8628825262,
+            -23.2201737958
+          ],
+          [
+            -45.86256124140001,
+            -23.2205156783
+          ],
+          [
+            -45.8622430854,
+            -23.2208604713
+          ],
+          [
+            -45.86192541009999,
+            -23.221205712
+          ],
+          [
+            -45.8616082154,
+            -23.2215514007
+          ],
+          [
+            -45.8612910184,
+            -23.221897088
+          ],
+          [
+            -45.8609733382,
+            -23.222242327
+          ],
+          [
+            -45.8606546932,
+            -23.2225866697
+          ],
+          [
+            -45.8603372502,
+            -23.222932131
+          ],
+          [
+            -45.8600200474,
+            -23.2232778166
+          ],
+          [
+            -45.8597018784,
+            -23.2236226047
+          ],
+          [
+            -45.8593841901,
+            -23.2239678406
+          ],
+          [
+            -45.8590665002,
+            -23.2243130759
+          ],
+          [
+            -45.85874856810001,
+            -23.224658087
+          ],
+          [
+            -45.8584315976,
+            -23.2250039932
+          ],
+          [
+            -45.8581131801,
+            -23.2253485546
+          ],
+          [
+            -45.8577962063,
+            -23.2256944595
+          ],
+          [
+            -45.85747778559999,
+            -23.2260390197
+          ],
+          [
+            -45.85715984469999,
+            -23.2263840272
+          ],
+          [
+            -45.8568411803,
+            -23.2267283626
+          ],
+          [
+            -45.8565242,
+            -23.2270742651
+          ],
+          [
+            -45.8562064954,
+            -23.22741949490001
+          ],
+          [
+            -45.8558887892,
+            -23.2277647241
+          ],
+          [
+            -45.8555701176,
+            -23.2281090564
+          ],
+          [
+            -45.85525096340001,
+            -23.228452941
+          ],
+          [
+            -45.8549344566,
+            -23.2287992882
+          ],
+          [
+            -45.8546167439,
+            -23.229144515
+          ],
+          [
+            -45.854298548,
+            -23.2294892934
+          ],
+          [
+            -45.85398083200001,
+            -23.2298345189
+          ],
+          [
+            -45.85366070520001,
+            -23.2301775035
+          ],
+          [
+            -45.8533347959,
+            -23.2305151115
+          ],
+          [
+            -45.8530076807,
+            -23.230851599
+          ],
+          [
+            -45.8526810454,
+            -23.2311885336
+          ],
+          [
+            -45.85235272200001,
+            -23.2315238993
+          ],
+          [
+            -45.8520251203,
+            -23.231859937
+          ],
+          [
+            -45.8516987206,
+            -23.2321970933
+          ],
+          [
+            -45.8513715972,
+            -23.2325335775
+          ],
+          [
+            -45.85104399,
+            -23.2328696126
+          ],
+          [
+            -45.85071710439999,
+            -23.2332063198
+          ],
+          [
+            -45.8502209745,
+            -23.2337189291
+          ],
+          [
+            -45.8427054561,
+            -23.2406202212
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8727279989,
+            -23.2106226287
+          ],
+          [
+            -45.8762064158,
+            -23.213856895
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.876484577,
+            -23.2238523738
+          ],
+          [
+            -45.8761187501,
+            -23.2241528472
+          ],
+          [
+            -45.8757519576,
+            -23.2244524236
+          ],
+          [
+            -45.8753866097,
+            -23.2247533438
+          ],
+          [
+            -45.8750202955,
+            -23.2250533663
+          ],
+          [
+            -45.87465494429999,
+            -23.2253542848
+          ],
+          [
+            -45.8742883864,
+            -23.2256540822
+          ],
+          [
+            -45.87392279,
+            -23.2259547742
+          ],
+          [
+            -45.87355622880001,
+            -23.2262545699
+          ],
+          [
+            -45.8731913527,
+            -23.226555933
+          ],
+          [
+            -45.87282478819999,
+            -23.2268557271
+          ],
+          [
+            -45.8724606308,
+            -23.2271577598
+          ],
+          [
+            -45.8720928586,
+            -23.2274564325
+          ],
+          [
+            -45.87172653039999,
+            -23.2277564484
+          ],
+          [
+            -45.8713587549,
+            -23.2280551195
+          ],
+          [
+            -45.87098688169999,
+            -23.2283499814
+          ],
+          [
+            -45.8706118759,
+            -23.2286419316
+          ],
+          [
+            -45.8702363862,
+            -23.2289334325
+          ],
+          [
+            -45.8698604126,
+            -23.2292244842
+          ],
+          [
+            -45.869484438,
+            -23.2295155356
+          ],
+          [
+            -45.8691089434,
+            -23.2298070339
+          ],
+          [
+            -45.8687344104,
+            -23.230099427
+          ],
+          [
+            -45.868358672,
+            -23.2303907001
+          ],
+          [
+            -45.8679826902,
+            -23.2306817474
+          ],
+          [
+            -45.86760767130001,
+            -23.2309736908
+          ],
+          [
+            -45.8672321685,
+            -23.2312651848
+          ],
+          [
+            -45.866856664,
+            -23.231556678
+          ],
+          [
+            -45.8664813984,
+            -23.2318483939
+          ],
+          [
+            -45.86610516790001,
+            -23.2321392134
+          ],
+          [
+            -45.8657303813,
+            -23.2324313761
+          ],
+          [
+            -45.8653541475,
+            -23.2327221938
+          ],
+          [
+            -45.8649793576,
+            -23.2330143547
+          ],
+          [
+            -45.86460408449999,
+            -23.233306067
+          ],
+          [
+            -45.86422953170001,
+            -23.2335984498
+          ],
+          [
+            -45.8638532914,
+            -23.2338892641
+          ],
+          [
+            -45.8634777722,
+            -23.2341807496
+          ],
+          [
+            -45.86310225129999,
+            -23.2344722342
+          ],
+          [
+            -45.8627276927,
+            -23.2347646142
+          ],
+          [
+            -45.8623536134,
+            -23.2350574405
+          ],
+          [
+            -45.8619768833,
+            -23.2353478027
+          ],
+          [
+            -45.86160135580001,
+            -23.2356392839
+          ],
+          [
+            -45.86122630839999,
+            -23.235931212
+          ],
+          [
+            -45.8608507777,
+            -23.2362226915
+          ],
+          [
+            -45.8604776548,
+            -23.2365164104
+          ],
+          [
+            -45.86011031169999,
+            -23.2368155041
+          ],
+          [
+            -45.8597441713,
+            -23.23711571680001
+          ],
+          [
+            -45.8593775476,
+            -23.2374154809
+          ],
+          [
+            -45.859012609,
+            -23.2377168124
+          ],
+          [
+            -45.85864694530001,
+            -23.2380174705
+          ],
+          [
+            -45.85828007620001,
+            -23.2383170086
+          ],
+          [
+            -45.8579139276,
+            -23.2386172172
+          ],
+          [
+            -45.8575482596,
+            -23.2389178735
+          ],
+          [
+            -45.8571818666,
+            -23.2392178562
+          ],
+          [
+            -45.8566240681,
+            -23.2396731403
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8817519948,
+            -23.21901273450001
+          ],
+          [
+            -45.8782733108,
+            -23.2157786011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8427054561,
+            -23.2406202212
+          ],
+          [
+            -45.84487348850001,
+            -23.2426364534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8491034061,
+            -23.2465721416
+          ],
+          [
+            -45.846936443,
+            -23.2445548745
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8674605635,
+            -23.2154619707
+          ],
+          [
+            -45.8727279989,
+            -23.2106226287
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8817519948,
+            -23.21901273450001
+          ],
+          [
+            -45.8782733108,
+            -23.2157786011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.876484577,
+            -23.2238523738
+          ],
+          [
+            -45.8817519948,
+            -23.21901273450001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84910856660001,
+            -23.2465747337
+          ],
+          [
+            -45.8469404069,
+            -23.2445585647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8566240681,
+            -23.2396731403
+          ],
+          [
+            -45.84910856660001,
+            -23.2465747337
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8817519948,
+            -23.21901273450001
+          ],
+          [
+            -45.9061440523,
+            -23.1970057736
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8427054561,
+            -23.2406202212
+          ],
+          [
+            -45.8268841034,
+            -23.2547400315
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.84910856660001,
+            -23.2465747337
+          ],
+          [
+            -45.8336636292,
+            -23.26104522050001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.88501187679999,
+            -23.210513439
+          ],
+          [
+            -45.8838904863,
+            -23.2094708834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8830637302,
+            -23.2087022332
+          ],
+          [
+            -45.8819423699,
+            -23.2076596625
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8819423699,
+            -23.2076596625
+          ],
+          [
+            -45.8753327103,
+            -23.2130445375
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.88501187679999,
+            -23.210513439
+          ],
+          [
+            -45.8791470519,
+            -23.2165909409
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8721274469,
+            -23.2198013754
+          ],
+          [
+            -45.871817412,
+            -23.2195131093
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8721274469,
+            -23.2198013754
+          ],
+          [
+            -45.871817412,
+            -23.2195131093
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8485413372,
+            -23.2414649886
+          ],
+          [
+            -45.84823129969999,
+            -23.2411766767
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.859908813,
+            -23.2315029104
+          ],
+          [
+            -45.8590820332,
+            -23.2307341209
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8499037595,
+            -23.2427319178
+          ],
+          [
+            -45.84686897500001,
+            -23.2399097931
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.85908170099999,
+            -23.2307344261
+          ],
+          [
+            -45.84686897500001,
+            -23.2399097931
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.85990975359999,
+            -23.2315019559
+          ],
+          [
+            -45.8499037595,
+            -23.2427319178
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8753327103,
+            -23.2130445375
+          ],
+          [
+            -45.8700652799,
+            -23.2178839653
+          ],
+          [
+            -45.8697270008,
+            -23.2182100378
+          ],
+          [
+            -45.8693891333,
+            -23.2185364939
+          ],
+          [
+            -45.8690506442,
+            -23.2188623727
+          ],
+          [
+            -45.86871256689999,
+            -23.2191886353
+          ],
+          [
+            -45.8683740745,
+            -23.2195145128
+          ],
+          [
+            -45.8680360979,
+            -23.2198408707
+          ],
+          [
+            -45.8676977055,
+            -23.2201668429
+          ],
+          [
+            -45.867359725,
+            -23.2204931987
+          ],
+          [
+            -45.86702101859999,
+            -23.2208188806
+          ],
+          [
+            -45.86668303550001,
+            -23.2211452357
+          ],
+          [
+            -45.8663440158,
+            -23.221470628
+          ],
+          [
+            -45.8660065461,
+            -23.2217974622
+          ],
+          [
+            -45.86566845390001,
+            -23.2221237185
+          ],
+          [
+            -45.86533096090001,
+            -23.2224505328
+          ],
+          [
+            -45.8649952651,
+            -23.222779019
+          ],
+          [
+            -45.8646608925,
+            -23.2231087364
+          ],
+          [
+            -45.864326725,
+            -23.2234386454
+          ],
+          [
+            -45.8639927625,
+            -23.2237687459
+          ],
+          [
+            -45.8636587432,
+            -23.2240987945
+          ],
+          [
+            -45.8633246266,
+            -23.2244287533
+          ],
+          [
+            -45.86299003840001,
+            -23.2247582746
+          ],
+          [
+            -45.862655966,
+            -23.2250882763
+          ],
+          [
+            -45.86232199599999,
+            -23.225418374
+          ],
+          [
+            -45.86198760959999,
+            -23.2257480855
+          ],
+          [
+            -45.861653429,
+            -23.226077989
+          ],
+          [
+            -45.8613192467,
+            -23.2264078919
+          ],
+          [
+            -45.8609849594,
+            -23.2267376981
+          ],
+          [
+            -45.86065108450001,
+            -23.2270678886
+          ],
+          [
+            -45.86031658660001,
+            -23.2273975005
+          ],
+          [
+            -45.8599827085,
+            -23.2277276896
+          ],
+          [
+            -45.8596482073,
+            -23.2280573002
+          ],
+          [
+            -45.85931391180001,
+            -23.228387103
+          ],
+          [
+            -45.8589793047,
+            -23.2287166168
+          ],
+          [
+            -45.8586454193,
+            -23.2290468026
+          ],
+          [
+            -45.85831122219999,
+            -23.2293766994
+          ],
+          [
+            -45.8579770236,
+            -23.2297065955
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8791470519,
+            -23.2165909409
+          ],
+          [
+            -45.8738796265,
+            -23.2214304968
+          ],
+          [
+            -45.8735247956,
+            -23.2217411875
+          ],
+          [
+            -45.8731695498,
+            -23.222051493
+          ],
+          [
+            -45.87281492240001,
+            -23.2223623743
+          ],
+          [
+            -45.8724598799,
+            -23.2226728705
+          ],
+          [
+            -45.87210524919999,
+            -23.2229837503
+          ],
+          [
+            -45.8717500994,
+            -23.2232941483
+          ],
+          [
+            -45.8713953621,
+            -23.2236049304
+          ],
+          [
+            -45.8710402097,
+            -23.2239153275
+          ],
+          [
+            -45.8706857798,
+            -23.224226397
+          ],
+          [
+            -45.8703306234,
+            -23.2245367919
+          ],
+          [
+            -45.8699765003,
+            -23.2248481482
+          ],
+          [
+            -45.86962082389999,
+            -23.2251580611
+          ],
+          [
+            -45.8692657666,
+            -23.2254685505
+          ],
+          [
+            -45.8689101069,
+            -23.2257784804
+          ],
+          [
+            -45.8685526466,
+            -23.226086737
+          ],
+          [
+            -45.8681938598,
+            -23.2263937609
+          ],
+          [
+            -45.8678348646,
+            -23.2267005918
+          ],
+          [
+            -45.8674756611,
+            -23.2270072298
+          ],
+          [
+            -45.867116511,
+            -23.2273139182
+          ],
+          [
+            -45.8667574551,
+            -23.2276206949
+          ],
+          [
+            -45.86639886739999,
+            -23.2279279077
+          ],
+          [
+            -45.8660397607,
+            -23.2282346386
+          ],
+          [
+            -45.8656805482,
+            -23.228541272
+          ],
+          [
+            -45.8653217489,
+            -23.2288482903
+          ],
+          [
+            -45.8649627405,
+            -23.229155115
+          ],
+          [
+            -45.8646037306,
+            -23.2294619389
+          ],
+          [
+            -45.8642448223,
+            -23.2297688581
+          ],
+          [
+            -45.8638854983,
+            -23.2300753915
+          ],
+          [
+            -45.8635267941,
+            -23.2303825019
+          ],
+          [
+            -45.86316746679999,
+            -23.2306890338
+          ],
+          [
+            -45.8628087593,
+            -23.2309961427
+          ],
+          [
+            -45.8624498427,
+            -23.231303058
+          ],
+          [
+            -45.86209123459999,
+            -23.2316102607
+          ],
+          [
+            -45.8617319014,
+            -23.2319167901
+          ],
+          [
+            -45.8613728766,
+            -23.2322236069
+          ],
+          [
+            -45.8610138502,
+            -23.232530423
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8579770236,
+            -23.2297065955
+          ],
+          [
+            -45.84686897500001,
+            -23.2399097931
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO_INTERNA",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line4",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8610138502,
+            -23.232530423
+          ],
+          [
+            -45.8499037595,
+            -23.2427319178
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.8782733108,
+            -23.2157786011
+          ],
+          [
+            -45.9976608853,
+            -23.1346291654
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "APROXIMAÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line10",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.87620641589999,
+            -23.2138568951
+          ],
+          [
+            -45.89244824239999,
+            -23.1905248508
+          ],
+          [
+            -45.9573601531,
+            -23.0971810401
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem nome",
+        "description": "TRANSIÇÃO",
+        "dataset": "PBZPA SBSJ",
+        "category": "zonas-protecao",
+        "folderPath": [
+          "PBZPA_SBSJ",
+          "PBZPA_SBSJ_1.KMZ",
+          "Line Features"
+        ],
+        "styleUrl": "#line20",
+        "rawSource": "data/02-Dados Geo/pbzpa_SBSJ.kmz"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -45.89508972119999,
+            -23.1867293564
+          ],
+          [
+            -45.8727279989,
+            -23.2106226287
+          ]
+        ]
+      }
+    }
+  ]
+}
