@@ -35,7 +35,7 @@
       <section class="map-toolbar" aria-label="Controles do mapa">
         <div class="map-title">
           <h1>Mapa do Sandbox</h1>
-          <p>Camadas úteis já separadas para OPEA e zonas de proteção no entorno do SBSJ.</p>
+          <p>Camadas KML/KMZ úteis já separadas para OPEA e zonas de proteção no entorno do SBSJ.</p>
         </div>
 
         <div class="toolbar-actions">
@@ -83,12 +83,12 @@
         <div class="topic-grid two-items">
           <article class="topic-card">
             <h3>Obstáculos OPEA</h3>
-            <p>Feições derivadas do arquivo OPEA útil já separado para o entorno do SBSJ.</p>
+            <p>Feições carregadas do KML OPEA útil já separado para o entorno do SBSJ.</p>
             <button class="ghost" type="button" data-story-layer="topografia">Abrir OPEA</button>
           </article>
           <article class="topic-card">
             <h3>Zonas de proteção</h3>
-            <p>PBZPH, PBZPA SBSJ e PZPANA SBSJ derivados para visualização no mapa.</p>
+            <p>PBZPH, PBZPA SBSJ e PZPANA SBSJ carregados de KML/KMZ no mapa.</p>
             <button class="ghost" type="button" data-story-layer="zonas-protecao">Abrir proteção</button>
           </article>
         </div>
@@ -107,6 +107,7 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="data/map-layers.js"></script>
     <script src="assets/js/map.js"></script>
   </body>

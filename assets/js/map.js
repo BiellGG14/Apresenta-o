@@ -10,10 +10,11 @@
   const activeLayerIds = new Set();
   const layerGroups = new Map();
   const layerLoadState = new Map();
-  const expectedGeoJsonLoads = new Map(
+  const renderableFileTypes = new Set(["geojson", "kml", "kmz"]);
+  const expectedFileLoads = new Map(
     layers.map((layer) => [
       layer.id,
-      layer.features.filter((feature) => feature.type === "geojson").length
+      layer.features.filter((feature) => renderableFileTypes.has(feature.type)).length
     ])
   );
   let selectedLayerId = "zonas-protecao";
@@ -120,8 +121,248 @@
     };
   }
 
+  function nodeLocalName(node) {
+    return node?.localName || node?.nodeName?.split(":").pop() || "";
+  }
+
+  function childElements(node, name) {
+    return Array.from(node?.children || []).filter(
+      (child) => !name || nodeLocalName(child) === name
+    );
+  }
+
+  function firstChildElement(node, name) {
+    return childElements(node, name)[0] || null;
+  }
+
+  function descendantsByName(node, name) {
+    return Array.from(node?.getElementsByTagName("*") || []).filter(
+      (child) => nodeLocalName(child) === name
+    );
+  }
+
+  function directKmlText(node, name) {
+    return firstChildElement(node, name)?.textContent?.trim() || "";
+  }
+
+  function cleanKmlText(value) {
+    return String(value || "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function parseCoordinateText(value) {
+    return String(value || "")
+      .trim()
+      .split(/\s+/)
+      .map((item) => {
+        const [lon, lat] = item.split(",").map(Number);
+        return Number.isFinite(lon) && Number.isFinite(lat) ? [lon, lat] : null;
+      })
+      .filter(Boolean);
+  }
+
+  function coordinatesFromNode(node) {
+    return parseCoordinateText(descendantsByName(node, "coordinates")[0]?.textContent || "");
+  }
+
+  function closeRing(coords) {
+    if (!coords.length) {
+      return coords;
+    }
+
+    const first = coords[0];
+    const last = coords[coords.length - 1];
+
+    if (first[0] === last[0] && first[1] === last[1]) {
+      return coords;
+    }
+
+    return [...coords, first];
+  }
+
+  function parseKmlGeometryNode(node) {
+    const type = nodeLocalName(node);
+
+    if (type === "Point") {
+      const coords = coordinatesFromNode(node);
+      return coords.length ? { type: "Point", coordinates: coords[0] } : null;
+    }
+
+    if (type === "LineString" || type === "LinearRing") {
+      const coords = coordinatesFromNode(node);
+      return coords.length > 1 ? { type: "LineString", coordinates: coords } : null;
+    }
+
+    if (type === "Polygon") {
+      const outerBoundary = descendantsByName(node, "outerBoundaryIs")[0];
+      const outerRing = outerBoundary ? descendantsByName(outerBoundary, "LinearRing")[0] : null;
+      const outer = closeRing(coordinatesFromNode(outerRing));
+
+      if (outer.length < 4) {
+        return null;
+      }
+
+      const innerRings = descendantsByName(node, "innerBoundaryIs")
+        .map((boundary) => descendantsByName(boundary, "LinearRing")[0])
+        .map((ring) => closeRing(coordinatesFromNode(ring)))
+        .filter((ring) => ring.length >= 4);
+
+      return { type: "Polygon", coordinates: [outer, ...innerRings] };
+    }
+
+    if (type === "MultiGeometry") {
+      const geometries = childElements(node)
+        .map((child) => parseKmlGeometryNode(child))
+        .filter(Boolean);
+
+      if (geometries.length === 1) {
+        return geometries[0];
+      }
+
+      return geometries.length ? { type: "GeometryCollection", geometries } : null;
+    }
+
+    return null;
+  }
+
+  function geometryFromPlacemark(placemark) {
+    const geometryNames = new Set(["Point", "LineString", "Polygon", "MultiGeometry"]);
+    const directGeometries = Array.from(placemark.children || []).filter((child) =>
+      geometryNames.has(nodeLocalName(child))
+    );
+    const geometryNodes = directGeometries.length
+      ? directGeometries
+      : descendantsByName(placemark, "MultiGeometry")
+          .concat(descendantsByName(placemark, "Polygon"))
+          .concat(descendantsByName(placemark, "LineString"))
+          .concat(descendantsByName(placemark, "Point"));
+
+    const geometries = geometryNodes
+      .filter((node, index, nodes) => nodes.indexOf(node) === index)
+      .map((node) => parseKmlGeometryNode(node))
+      .filter(Boolean);
+
+    if (geometries.length === 1) {
+      return geometries[0];
+    }
+
+    return geometries.length ? { type: "GeometryCollection", geometries } : null;
+  }
+
+  function folderPathFromPlacemark(placemark) {
+    const folders = [];
+    let parent = placemark.parentElement;
+
+    while (parent) {
+      if (nodeLocalName(parent) === "Folder") {
+        const name = directKmlText(parent, "name");
+
+        if (name) {
+          folders.unshift(name);
+        }
+      }
+
+      parent = parent.parentElement;
+    }
+
+    return folders;
+  }
+
+  function kmlTextToGeoJson(kmlText, layer, featureConfig) {
+    const xml = new DOMParser().parseFromString(kmlText, "application/xml");
+
+    if (descendantsByName(xml, "parsererror").length) {
+      throw new Error(`KML inválido em ${featureConfig.url}`);
+    }
+
+    const placemarks = descendantsByName(xml, "Placemark");
+    const features = placemarks
+      .map((placemark) => {
+        const geometry = geometryFromPlacemark(placemark);
+
+        if (!geometry) {
+          return null;
+        }
+
+        const name = directKmlText(placemark, "name") || featureConfig.label || layer.title;
+        const description = cleanKmlText(directKmlText(placemark, "description"));
+
+        return {
+          type: "Feature",
+          properties: {
+            name,
+            description,
+            dataset: featureConfig.label || layer.shortTitle,
+            folderPath: folderPathFromPlacemark(placemark),
+            source: featureConfig.url
+          },
+          geometry
+        };
+      })
+      .filter(Boolean);
+
+    return { type: "FeatureCollection", features };
+  }
+
+  async function fetchTextFile(url) {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Falha ao carregar ${url}`);
+    }
+
+    return response.text();
+  }
+
+  async function loadKmzText(url) {
+    if (typeof JSZip === "undefined") {
+      throw new Error("JSZip não foi carregado para abrir KMZ.");
+    }
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Falha ao carregar ${url}`);
+    }
+
+    const zip = await JSZip.loadAsync(await response.arrayBuffer());
+    const kmlFile = Object.values(zip.files).find(
+      (file) => !file.dir && file.name.toLowerCase().endsWith(".kml")
+    );
+
+    if (!kmlFile) {
+      throw new Error(`KMZ sem KML interno: ${url}`);
+    }
+
+    return kmlFile.async("text");
+  }
+
+  async function loadFeatureData(layer, feature) {
+    if (feature.type === "geojson") {
+      const response = await fetch(feature.url);
+
+      if (!response.ok) {
+        throw new Error(`Falha ao carregar ${feature.url}`);
+      }
+
+      return response.json();
+    }
+
+    if (feature.type === "kml") {
+      return kmlTextToGeoJson(await fetchTextFile(feature.url), layer, feature);
+    }
+
+    if (feature.type === "kmz") {
+      return kmlTextToGeoJson(await loadKmzText(feature.url), layer, feature);
+    }
+
+    return null;
+  }
+
   function updateLayerLoadState(layerId, state) {
-    const expected = expectedGeoJsonLoads.get(layerId) || 0;
+    const expected = expectedFileLoads.get(layerId) || 0;
     const current = layerLoadState.get(layerId) || {
       expected,
       loaded: 0,
@@ -211,16 +452,10 @@
       );
     }
 
-    if (feature.type === "geojson") {
+    if (renderableFileTypes.has(feature.type)) {
       const group = L.layerGroup();
       updateLayerLoadState(layer.id, "loading");
-      fetch(feature.url)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`Falha ao carregar ${feature.url}`);
-          }
-          return response.json();
-        })
+      loadFeatureData(layer, feature)
         .then((data) => {
           const geoJsonLayer = L.geoJSON(data, {
             style: (geoFeature) => geoJsonStyle(layer, feature, geoFeature),

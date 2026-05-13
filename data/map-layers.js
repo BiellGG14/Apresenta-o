@@ -6,22 +6,22 @@ window.SANDBOX_MAP_CONFIG = {
     {
       id: "topografia",
       category: "ambiente",
-      group: "Derivado",
+      group: "Original útil",
       code: "OPEA",
       title: "Obstáculos OPEA",
       shortTitle: "Obstáculos OPEA",
-      status: "Derivado",
+      status: "KML",
       progress: "428 feições",
       color: "#8c6d31",
       active: true,
       summary:
-        "Obstáculos OPEA filtrados para o entorno do SBSJ a partir de dado bruto local.",
+        "Obstáculos OPEA carregados a partir do KML útil separado para o entorno do SBSJ.",
       details: [
-        "O mapa consome apenas o GeoJSON derivado em data/geojson/sbsj/obstaculos.",
+        "O mapa carrega o arquivo KML preservado em data/geojson/sbsj/originais.",
         "A pasta data/02-Dados Geo permanece como fonte bruta local e não é carregada diretamente.",
-        "A camada ainda precisa de revisão técnica antes de ser considerada oficial."
+        "O GeoJSON derivado fica como apoio técnico, mas a visualização principal usa o KML."
       ],
-      evidence: ["opea_sbsj.geojson", "manifest.json"],
+      evidence: ["opeaSBSJ.kml", "manifest.json"],
       nextSteps: [
         "Validar atributos relevantes dos obstáculos.",
         "Definir simbologia por elevação, tipo ou criticidade.",
@@ -29,98 +29,94 @@ window.SANDBOX_MAP_CONFIG = {
       ],
       files: [
         {
-          format: "GeoJSON derivado",
-          path: "data/geojson/sbsj/obstaculos/opea_sbsj.geojson"
+          format: "KML original útil",
+          path: "data/geojson/sbsj/originais/opeaSBSJ.kml"
         }
       ],
       features: [
         {
-          type: "geojson",
+          type: "kml",
           label: "OPEA SBSJ",
-          url: "data/geojson/sbsj/obstaculos/opea_sbsj.geojson",
+          url: "data/geojson/sbsj/originais/opeaSBSJ.kml",
           color: "#8c6d31",
           fillColor: "#8c6d31",
           radius: 4,
-          popup:
-            "Obstáculo OPEA derivado para consumo rastreável no mapa."
+          popup: "Obstáculo OPEA carregado a partir do KML útil."
         }
       ]
     },
     {
       id: "zonas-protecao",
       category: "riscos",
-      group: "Derivado",
+      group: "Original útil",
       code: "T12",
       title: "Zonas de proteção",
       shortTitle: "Zonas de proteção",
-      status: "Derivado",
+      status: "KML/KMZ",
       progress: "287 feições",
       color: "#e05b2a",
       active: true,
       summary:
-        "Camada com derivados de PBZPH, PBZPA SBSJ e PZPANA SBSJ.",
+        "Camada carregada a partir dos arquivos úteis PBZPH, PBZPA SBSJ e PZPANA SBSJ.",
       details: [
-        "O mapa consome apenas arquivos derivados em data/geojson/sbsj/zonas.",
-        "Os arquivos brutos em data/02-Dados Geo não são carregados diretamente.",
-        "As feições ainda precisam de revisão técnica para definir o que entra na versão oficial."
+        "PBZPH entra como KML preservado em data/geojson/sbsj/originais.",
+        "PBZPA SBSJ e PZPANA SBSJ entram como KMZ preservados e abertos no navegador.",
+        "Os arquivos brutos em data/02-Dados Geo não são carregados diretamente pelo site."
       ],
-      evidence: ["pbzph.geojson", "pbzpa_sbsj.geojson", "pzpana_sbsj.geojson", "manifest.json"],
+      evidence: ["pbzph.kml", "pbzpa_SBSJ.kmz", "pzpana_SBSJ.kmz", "manifest.json"],
       nextSteps: [
-        "Revisar quais feições derivadas devem permanecer ativas.",
+        "Revisar quais feições devem permanecer ativas.",
         "Separar superfícies por tipo e critério regulatório.",
         "Cruzar com OPEA, topografia e futuras simulações."
       ],
       files: [
         {
-          format: "GeoJSON derivado",
-          path: "data/geojson/sbsj/zonas/pbzph.geojson"
+          format: "KML original útil",
+          path: "data/geojson/sbsj/originais/pbzph.kml"
         },
         {
-          format: "GeoJSON derivado",
-          path: "data/geojson/sbsj/zonas/pbzpa_sbsj.geojson"
+          format: "KMZ original útil",
+          path: "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz"
         },
         {
-          format: "GeoJSON derivado",
-          path: "data/geojson/sbsj/zonas/pzpana_sbsj.geojson"
+          format: "KMZ original útil",
+          path: "data/geojson/sbsj/originais/pzpana_SBSJ.kmz"
         }
       ],
       features: [
         {
-          type: "geojson",
+          type: "kml",
           label: "PBZPH",
-          url: "data/geojson/sbsj/zonas/pbzph.geojson",
+          url: "data/geojson/sbsj/originais/pbzph.kml",
           color: "#e05b2a",
           fillColor: "#e05b2a",
           fillOpacity: 0.13,
           weight: 3,
           radius: 4,
-          popup:
-            "PBZPH derivado para consumo rastreável no mapa."
+          popup: "PBZPH carregado a partir do KML útil."
         },
         {
-          type: "geojson",
+          type: "kmz",
           label: "PBZPA SBSJ",
-          url: "data/geojson/sbsj/zonas/pbzpa_sbsj.geojson",
+          url: "data/geojson/sbsj/originais/pbzpa_SBSJ.kmz",
           color: "#b94b45",
           fillColor: "#b94b45",
           fillOpacity: 0.12,
           weight: 2,
           radius: 4,
-          popup:
-            "PBZPA SBSJ derivado para consumo rastreável no mapa."
+          popup: "PBZPA SBSJ carregado a partir do KMZ útil."
         },
         {
-          type: "geojson",
+          type: "kmz",
           label: "PZPANA SBSJ",
-          url: "data/geojson/sbsj/zonas/pzpana_sbsj.geojson",
+          url: "data/geojson/sbsj/originais/pzpana_SBSJ.kmz",
           color: "#7b5fb2",
           fillColor: "#7b5fb2",
           fillOpacity: 0.12,
           weight: 2,
           radius: 4,
           dashArray: "8 6",
-          popup:
-            "PZPANA SBSJ derivado para consumo rastreável no mapa."
+          popup: "PZPANA SBSJ carregado a partir do KMZ útil."
         }
       ]
     }
