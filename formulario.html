@@ -21,7 +21,7 @@
 
     <main class="card form-container">
       <h2>Coleta de dados</h2>
-      <form>
+      <form id="formulario-tecnico">
         <fieldset>
           <legend>Meteorologia e dados aeroportuários do SBSJ</legend>
           <label for="meteorologia">Descrição técnica</label>
@@ -55,5 +55,10 @@
         <button type="submit">Registrar informações</button>
       </form>
     </main>
+    <script>
+      document.getElementById('formulario-tecnico').addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
