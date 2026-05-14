@@ -586,27 +586,78 @@ button:hover {
   background: #dbe3e9;
 }
 
-.map-status-strip {
+.map-legend {
   position: absolute;
   left: 0.75rem;
   bottom: 0.75rem;
   z-index: 450;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  max-width: calc(100% - 1.5rem);
-}
-
-.map-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 30px;
-  padding: 0.25rem 0.55rem;
+  width: min(280px, calc(100% - 1.5rem));
+  max-height: min(42%, 320px);
+  overflow: auto;
+  padding: 0.65rem;
   border: 1px solid rgba(17, 42, 67, 0.16);
   border-radius: var(--radius-sm);
   color: var(--navy);
-  background: rgba(255, 255, 255, 0.93);
-  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 14px 34px rgba(17, 42, 67, 0.16);
+}
+
+.legend-title {
+  margin-bottom: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.legend-list {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.legend-item {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 0.45rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(17, 42, 67, 0.18);
+  border-radius: 4px;
+}
+
+.legend-line {
+  width: 18px;
+  height: 0;
+  border-top: 2px dashed rgba(17, 65, 104, 0.55);
+}
+
+.map-grid-label {
+  color: rgba(17, 42, 67, 0.78);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(17, 42, 67, 0.12);
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.18rem 0.28rem;
+  white-space: nowrap;
+}
+
+.map-grid-line {
+  stroke-dasharray: 5 7;
+}
+
+.leaflet-control-scale-line {
+  border-color: rgba(17, 42, 67, 0.72);
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.9);
   font-weight: 800;
 }
 
@@ -668,6 +719,12 @@ button:hover {
 .map-stage:fullscreen #map {
   height: 100vh;
   min-height: 100vh;
+}
+
+.map-stage:fullscreen .map-legend {
+  left: 1rem;
+  bottom: 1rem;
+  max-height: 46vh;
 }
 
 .filter-bar {
@@ -1211,6 +1268,11 @@ select {
 
   .map-base-toggle button {
     flex: 1;
+  }
+
+  .map-legend {
+    width: min(250px, calc(100% - 1.5rem));
+    max-height: 34%;
   }
 
   .details-body {

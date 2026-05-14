@@ -27,6 +27,12 @@
   }).setView(config.center, config.zoom);
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
+  L.control.scale({ position: "bottomright", metric: true, imperial: false, maxWidth: 140 }).addTo(map);
+
+  const gridPane = map.createPane("gridPane");
+  gridPane.style.zIndex = 330;
+  gridPane.style.pointerEvents = "none";
+  const gridLayer = L.layerGroup().addTo(map);
 
   const lightBase = L.tileLayer(
     "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
@@ -67,6 +73,135 @@
 
   lightBase.addTo(map);
 
+  function gridStepForZoom(zoom) {
+    if (zoom >= 14) {
+      return 0.005;
+    }
+
+    if (zoom >= 12) {
+      return 0.01;
+    }
+
+    if (zoom >= 10) {
+      return 0.025;
+    }
+
+    if (zoom >= 8) {
+      return 0.05;
+    }
+
+    if (zoom >= 6) {
+      return 0.25;
+    }
+
+    return 1;
+  }
+
+  function gridDecimals(step) {
+    if (step < 0.01) {
+      return 3;
+    }
+
+    if (step < 0.1) {
+      return 2;
+    }
+
+    if (step < 1) {
+      return 1;
+    }
+
+    return 0;
+  }
+
+  function formatCoordinate(value, axis, decimals) {
+    const suffix =
+      axis === "lat"
+        ? value >= 0
+          ? "N"
+          : "S"
+        : value >= 0
+          ? "E"
+          : "W";
+
+    return `${Math.abs(value).toFixed(decimals)}° ${suffix}`;
+  }
+
+  function addGridLabel(latlng, label) {
+    L.marker(latlng, {
+      pane: "gridPane",
+      interactive: false,
+      icon: L.divIcon({
+        className: "map-grid-label",
+        html: escapeHtml(label),
+        iconSize: null
+      })
+    }).addTo(gridLayer);
+  }
+
+  function renderGrid() {
+    const bounds = map.getBounds().pad(0.03);
+    const south = bounds.getSouth();
+    const north = bounds.getNorth();
+    const west = bounds.getWest();
+    const east = bounds.getEast();
+    const latSpan = north - south;
+    const lonSpan = east - west;
+    let step = gridStepForZoom(map.getZoom());
+
+    while (latSpan / step + lonSpan / step > 58) {
+      step *= 2;
+    }
+
+    const decimals = gridDecimals(step);
+    const latStart = Math.ceil(south / step) * step;
+    const lonStart = Math.ceil(west / step) * step;
+    const labelLat = south + latSpan * 0.04;
+    const labelLon = west + lonSpan * 0.012;
+
+    gridLayer.clearLayers();
+
+    for (let lat = latStart; lat <= north; lat += step) {
+      const roundedLat = Number(lat.toFixed(6));
+      L.polyline(
+        [
+          [roundedLat, west],
+          [roundedLat, east]
+        ],
+        {
+          pane: "gridPane",
+          className: "map-grid-line",
+          color: "#174168",
+          opacity: 0.24,
+          weight: 1,
+          interactive: false
+        }
+      ).addTo(gridLayer);
+      addGridLabel([roundedLat, labelLon], formatCoordinate(roundedLat, "lat", decimals));
+    }
+
+    for (let lon = lonStart; lon <= east; lon += step) {
+      const roundedLon = Number(lon.toFixed(6));
+      L.polyline(
+        [
+          [south, roundedLon],
+          [north, roundedLon]
+        ],
+        {
+          pane: "gridPane",
+          className: "map-grid-line",
+          color: "#174168",
+          opacity: 0.2,
+          weight: 1,
+          interactive: false
+        }
+      ).addTo(gridLayer);
+      addGridLabel([labelLat, roundedLon], formatCoordinate(roundedLon, "lon", decimals));
+    }
+  }
+
+  map.on("moveend zoomend", renderGrid);
+  map.whenReady(renderGrid);
+
   const categoryLabels = {
     all: "Todas",
     ambiente: "Ambiente",
@@ -89,12 +224,6 @@
     document.querySelectorAll("[data-base-layer]").forEach((button) => {
       button.classList.toggle("is-active", button.dataset.baseLayer === activeBaseLayerId);
     });
-
-    const selectedBaseName = document.getElementById("selected-base-name");
-
-    if (selectedBaseName) {
-      selectedBaseName.textContent = `Base: ${baseLayers[activeBaseLayerId].label}`;
-    }
   }
 
   function setBaseLayer(layerId) {
@@ -755,6 +884,34 @@
     return layerGroups.get(layerId);
   }
 
+  function updateLegend() {
+    const legendList = document.getElementById("legend-list");
+
+    if (!legendList) {
+      return;
+    }
+
+    const activeItems = layers.filter((layer) => activeLayerIds.has(layer.id));
+    const layerItems = activeItems
+      .map(
+        (layer) => `
+          <div class="legend-item">
+            <span class="legend-swatch" style="background:${escapeHtml(layer.color)}"></span>
+            <span>${escapeHtml(layer.shortTitle)}</span>
+          </div>
+        `
+      )
+      .join("");
+
+    legendList.innerHTML = `
+      <div class="legend-item">
+        <span class="legend-line"></span>
+        <span>Grade Lat/Lon</span>
+      </div>
+      ${layerItems}
+    `;
+  }
+
   function showLayer(layerId) {
     const group = getLayerGroup(layerId);
 
@@ -764,6 +921,7 @@
 
     group.addTo(map);
     activeLayerIds.add(layerId);
+    updateLegend();
   }
 
   function hideLayer(layerId) {
@@ -775,6 +933,7 @@
 
     map.removeLayer(group);
     activeLayerIds.delete(layerId);
+    updateLegend();
   }
 
   function getBoundsForLayer(layerId) {
@@ -1008,30 +1167,7 @@
   });
 
   function updateStatus() {
-    const activeCount = document.getElementById("active-count");
-    const selectedName = document.getElementById("selected-layer-name");
-    const loadState = document.getElementById("map-load-state");
-    const selectedBaseName = document.getElementById("selected-base-name");
-    const selected = layers.find((layer) => layer.id === selectedLayerId);
-
-    if (activeCount) {
-      activeCount.textContent = `${activeLayerIds.size}/${layers.length} camadas ativas`;
-    }
-
-    if (selectedName && selected) {
-      selectedName.textContent = `Foco: ${selected.shortTitle}`;
-    }
-
-    if (loadState) {
-      const selectedState = layerLoadState.get(selectedLayerId);
-      loadState.textContent = selectedState?.message
-        ? `Dados: ${selectedState.message}`
-        : "Dados: aguardando";
-    }
-
-    if (selectedBaseName) {
-      selectedBaseName.textContent = `Base: ${baseLayers[activeBaseLayerId].label}`;
-    }
+    updateLegend();
   }
 
   function selectedFromHash() {
