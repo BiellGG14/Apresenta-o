@@ -4,6 +4,48 @@ window.SANDBOX_MAP_CONFIG = {
   focusZoom: 15,
   layers: [
     {
+      id: "vertiporto-sbsj",
+      category: "infraestrutura",
+      group: "Vertiporto",
+      code: "SBSJ",
+      title: "Vertiporto SBSJ",
+      shortTitle: "Vertiporto SBSJ",
+      status: "Ponto inicial",
+      progress: "1 ponto",
+      color: "#0b5f8a",
+      active: true,
+      summary:
+        "Ponto de partida do vertiporto no Sandbox São José dos Campos.",
+      details: [
+        "O marcador abre como única camada ativa para orientar a navegação inicial.",
+        "O arquivo Vertiporto_SBSJ.gpkg fica preservado como referência recebida.",
+        "As demais camadas continuam disponíveis para ativação manual no painel."
+      ],
+      evidence: ["Vertiporto_SBSJ.gpkg"],
+      nextSteps: [
+        "Substituir o marcador por geometria detalhada quando a planta vier com feições.",
+        "Adicionar área de pouso, acessos e demais elementos físicos do vertiporto.",
+        "Cruzar o ponto com zonas de proteção, EAC e cenários simulados."
+      ],
+      files: [
+        {
+          format: "GeoPackage original",
+          path: "data/geojson/sbsj/Vertiporto_SBSJ.gpkg"
+        }
+      ],
+      features: [
+        {
+          type: "marker",
+          label: "Vertiporto SBSJ",
+          coords: [-23.2292, -45.8615],
+          color: "#ffffff",
+          fillColor: "#0b5f8a",
+          radius: 11,
+          popup: "Ponto inicial do vertiporto no Sandbox SBSJ."
+        }
+      ]
+    },
+    {
       id: "topografia",
       category: "ambiente",
       group: "Original útil",
@@ -13,7 +55,7 @@ window.SANDBOX_MAP_CONFIG = {
       status: "KML",
       progress: "428 feições",
       color: "#8c6d31",
-      active: true,
+      active: false,
       summary:
         "Obstáculos OPEA carregados a partir do KML útil separado para o entorno do SBSJ.",
       details: [
@@ -56,7 +98,7 @@ window.SANDBOX_MAP_CONFIG = {
       status: "KML/KMZ",
       progress: "287 feições",
       color: "#e05b2a",
-      active: true,
+      active: false,
       summary:
         "Camada carregada a partir dos arquivos úteis PBZPH, PBZPA SBSJ e PZPANA SBSJ.",
       details: [

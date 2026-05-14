@@ -17,7 +17,7 @@
       layer.features.filter((feature) => renderableFileTypes.has(feature.type)).length
     ])
   );
-  let selectedLayerId = "zonas-protecao";
+  let selectedLayerId = "vertiporto-sbsj";
   let currentFilter = "all";
   let activeBaseLayerId = "light";
 
@@ -70,6 +70,7 @@
 
   const categoryLabels = {
     all: "Todas",
+    infraestrutura: "Infraestrutura",
     ambiente: "Ambiente",
     fase1: "Fase I",
     riscos: "Proteção",

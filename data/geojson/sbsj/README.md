@@ -16,6 +16,7 @@ O nome `geojson` ficou como pasta histórica do projeto, mas o mapa atual usa KM
 - `originais/pbzph.kml`: PBZPH em KML.
 - `originais/pbzpa_SBSJ.kmz`: PBZPA SBSJ em KMZ.
 - `originais/pzpana_SBSJ.kmz`: PZPANA SBSJ em KMZ.
+- `Vertiporto_SBSJ.gpkg`: referência original recebida para o ponto do vertiporto.
 - `CV_REA_SP.gpkg`: fonte original REA São Paulo.
 - `REH/`: fonte original REH XP São Paulo em shapefile.
 - `EAC/D/`: fonte original EAC D em shapefile.
