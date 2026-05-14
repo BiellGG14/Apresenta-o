@@ -122,6 +122,198 @@ window.SANDBOX_MAP_CONFIG = {
       ]
     },
     {
+      id: "rea-sp",
+      category: "superficies",
+      group: "Superfície",
+      code: "REA",
+      title: "REA São Paulo",
+      shortTitle: "REA SP",
+      status: "KML derivado",
+      progress: "176 feições",
+      color: "#0284c7",
+      active: false,
+      summary:
+        "Superfícies REA de São Paulo derivadas do GeoPackage adicionado ao projeto.",
+      details: [
+        "A fonte original fica em data/geojson/sbsj/CV_REA_SP.gpkg.",
+        "O mapa consome o KML derivado em data/geojson/sbsj/superficies.",
+        "A camada foi reprojetada de SIRGAS 2000 / UTM 23S para WGS84."
+      ],
+      evidence: ["CV_REA_SP.gpkg", "rea_sp.kml", "manifest.json"],
+      nextSteps: [
+        "Validar quais trechos REA devem ficar ativos na apresentação.",
+        "Cruzar as superfícies com as trajetórias simuladas.",
+        "Ajustar legenda por classe, altitude ou trecho."
+      ],
+      files: [
+        {
+          format: "GeoPackage original",
+          path: "data/geojson/sbsj/CV_REA_SP.gpkg"
+        },
+        {
+          format: "KML derivado",
+          path: "data/geojson/sbsj/superficies/rea_sp.kml"
+        }
+      ],
+      features: [
+        {
+          type: "kml",
+          label: "REA São Paulo",
+          url: "data/geojson/sbsj/superficies/rea_sp.kml",
+          color: "#0284c7",
+          fillColor: "#38bdf8",
+          fillOpacity: 0.1,
+          weight: 2,
+          radius: 4,
+          popup: "Superfície REA derivada para visualização no mapa."
+        }
+      ]
+    },
+    {
+      id: "reh-xp-sp",
+      category: "superficies",
+      group: "Superfície",
+      code: "REH",
+      title: "REH XP São Paulo",
+      shortTitle: "REH XP SP",
+      status: "KML derivado",
+      progress: "106 feições",
+      color: "#be185d",
+      active: false,
+      summary:
+        "Superfícies REH XP São Paulo derivadas do shapefile adicionado ao projeto.",
+      details: [
+        "A fonte original fica em data/geojson/sbsj/REH.",
+        "O mapa consome o KML derivado em data/geojson/sbsj/superficies.",
+        "A camada original já está em WGS84."
+      ],
+      evidence: ["CV_REH_XP_SAO_PAULO.shp", "reh_xp_sao_paulo.kml", "manifest.json"],
+      nextSteps: [
+        "Validar quais trechos REH devem ficar ativos na apresentação.",
+        "Comparar a camada com REA e cenários simulados.",
+        "Ajustar legenda por classe, altitude ou trecho."
+      ],
+      files: [
+        {
+          format: "Shapefile original",
+          path: "data/geojson/sbsj/REH/CV_REH_XP_SAO_PAULO.shp"
+        },
+        {
+          format: "KML derivado",
+          path: "data/geojson/sbsj/superficies/reh_xp_sao_paulo.kml"
+        }
+      ],
+      features: [
+        {
+          type: "kml",
+          label: "REH XP São Paulo",
+          url: "data/geojson/sbsj/superficies/reh_xp_sao_paulo.kml",
+          color: "#be185d",
+          fillColor: "#f472b6",
+          fillOpacity: 0.12,
+          weight: 2,
+          radius: 4,
+          popup: "Superfície REH derivada para visualização no mapa."
+        }
+      ]
+    },
+    {
+      id: "eac-d",
+      category: "superficies",
+      group: "Espaço aéreo",
+      code: "EAC D",
+      title: "EAC D",
+      shortTitle: "EAC D",
+      status: "KML derivado",
+      progress: "110 feições",
+      color: "#7c3aed",
+      active: false,
+      summary:
+        "Espaços aéreos condicionados do conjunto EAC D adicionados como camada independente.",
+      details: [
+        "A fonte original fica em data/geojson/sbsj/EAC/D.",
+        "O mapa consome o KML derivado em data/geojson/sbsj/superficies.",
+        "A camada original já está em WGS84."
+      ],
+      evidence: ["eac_d.shp", "eac_d.kml", "manifest.json"],
+      nextSteps: [
+        "Validar quais áreas EAC D devem permanecer visíveis na apresentação.",
+        "Comparar com REA, REH, zonas de proteção e cenários simulados.",
+        "Ajustar simbologia por tipo, limite superior/inferior ou perigo."
+      ],
+      files: [
+        {
+          format: "Shapefile original",
+          path: "data/geojson/sbsj/EAC/D/eac_d.shp"
+        },
+        {
+          format: "KML derivado",
+          path: "data/geojson/sbsj/superficies/eac_d.kml"
+        }
+      ],
+      features: [
+        {
+          type: "kml",
+          label: "EAC D",
+          url: "data/geojson/sbsj/superficies/eac_d.kml",
+          color: "#7c3aed",
+          fillColor: "#a78bfa",
+          fillOpacity: 0.1,
+          weight: 2,
+          radius: 4,
+          popup: "EAC D derivado para visualização no mapa."
+        }
+      ]
+    },
+    {
+      id: "eac-p",
+      category: "superficies",
+      group: "Espaço aéreo",
+      code: "EAC P",
+      title: "EAC P",
+      shortTitle: "EAC P",
+      status: "KML derivado",
+      progress: "65 feições",
+      color: "#dc2626",
+      active: false,
+      summary:
+        "Espaços aéreos condicionados do conjunto EAC P adicionados como camada independente.",
+      details: [
+        "A fonte original fica em data/geojson/sbsj/EAC/P.",
+        "O mapa consome o KML derivado em data/geojson/sbsj/superficies.",
+        "A camada original já está em WGS84."
+      ],
+      evidence: ["eac_p.shp", "eac_p.kml", "manifest.json"],
+      nextSteps: [
+        "Validar quais áreas EAC P devem permanecer visíveis na apresentação.",
+        "Comparar com REA, REH, zonas de proteção e cenários simulados.",
+        "Ajustar simbologia por tipo, limite superior/inferior ou perigo."
+      ],
+      files: [
+        {
+          format: "Shapefile original",
+          path: "data/geojson/sbsj/EAC/P/eac_p.shp"
+        },
+        {
+          format: "KML derivado",
+          path: "data/geojson/sbsj/superficies/eac_p.kml"
+        }
+      ],
+      features: [
+        {
+          type: "kml",
+          label: "EAC P",
+          url: "data/geojson/sbsj/superficies/eac_p.kml",
+          color: "#dc2626",
+          fillColor: "#f87171",
+          fillOpacity: 0.1,
+          weight: 2,
+          radius: 4,
+          popup: "EAC P derivado para visualização no mapa."
+        }
+      ]
+    },
+    {
       id: "cenario-1",
       category: "simulacao",
       group: "Simulação",

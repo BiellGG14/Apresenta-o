@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T19:02:46",
+  "generatedAt": "2026-05-14T16:29:31",
   "sourceRoot": "data/02-Dados Geo",
   "note": "Arquivos KML/KMZ uteis promovidos para consumo do mapa. O site nao deve carregar diretamente a pasta de dados brutos.",
   "items": [
@@ -40,6 +40,62 @@
       "category": "zonas-protecao",
       "format": "KMZ",
       "featureCount": 82
+    },
+    {
+      "dataset": "REA São Paulo",
+      "source": "data/geojson/sbsj/CV_REA_SP.gpkg",
+      "target": "data/geojson/sbsj/superficies/rea_sp.kml",
+      "category": "superficies",
+      "format": "KML derivado",
+      "featureCount": 176,
+      "bounds": [
+        -47.75951609,
+        -24.22047063,
+        -42.040683,
+        -21.94787322
+      ]
+    },
+    {
+      "dataset": "REH XP São Paulo",
+      "source": "data/geojson/sbsj/REH/CV_REH_XP_SAO_PAULO.shp",
+      "target": "data/geojson/sbsj/superficies/reh_xp_sao_paulo.kml",
+      "category": "superficies",
+      "format": "KML derivado",
+      "featureCount": 106,
+      "bounds": [
+        -47.59636789,
+        -23.82172439,
+        -45.83778581,
+        -22.7697151
+      ]
+    },
+    {
+      "dataset": "EAC D",
+      "source": "data/geojson/sbsj/EAC/D/eac_d.shp",
+      "target": "data/geojson/sbsj/superficies/eac_d.kml",
+      "category": "superficies",
+      "format": "KML derivado",
+      "featureCount": 110,
+      "bounds": [
+        -57.640556,
+        -30.041389,
+        -35.470286,
+        -3.619322
+      ]
+    },
+    {
+      "dataset": "EAC P",
+      "source": "data/geojson/sbsj/EAC/P/eac_p.shp",
+      "target": "data/geojson/sbsj/superficies/eac_p.kml",
+      "category": "superficies",
+      "format": "KML derivado",
+      "featureCount": 65,
+      "bounds": [
+        -64.12378,
+        -30.006626,
+        -34.832,
+        -1.564765
+      ]
     }
   ]
 }

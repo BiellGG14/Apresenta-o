@@ -60,11 +60,19 @@
         <section class="map-main" aria-label="Mapa e detalhes">
           <section class="map-stage" aria-label="Mapa do SBSJ">
             <div id="map" aria-label="Mapa interativo com camadas do Sandbox"></div>
+            <div class="map-control-panel" aria-label="Controles de visualização do mapa">
+              <div class="map-base-toggle" role="group" aria-label="Mapa base">
+                <button type="button" class="is-active" data-base-layer="light">Clara</button>
+                <button type="button" data-base-layer="osm">OSM</button>
+                <button type="button" data-base-layer="satellite">Satélite</button>
+              </div>
+              <button class="map-fullscreen-button" type="button" id="map-fullscreen">Tela cheia</button>
+            </div>
             <div class="map-status-strip" aria-live="polite">
               <span class="map-badge" id="active-count">0 camadas ativas</span>
               <span class="map-badge" id="selected-layer-name">Foco: Zonas de proteção</span>
               <span class="map-badge" id="map-load-state">Dados: aguardando</span>
-              <span class="map-badge">Base cartográfica + satélite</span>
+              <span class="map-badge" id="selected-base-name">Base: clara</span>
             </div>
           </section>
 
@@ -90,6 +98,26 @@
             <h3>Zonas de proteção</h3>
             <p>PBZPH, PBZPA SBSJ e PZPANA SBSJ carregados de KML/KMZ no mapa.</p>
             <button class="ghost" type="button" data-story-layer="zonas-protecao">Abrir proteção</button>
+          </article>
+          <article class="topic-card">
+            <h3>REA São Paulo</h3>
+            <p>Superfícies REA promovidas a KML para visualização no dashboard.</p>
+            <button class="ghost" type="button" data-story-layer="rea-sp">Abrir REA</button>
+          </article>
+          <article class="topic-card">
+            <h3>REH XP São Paulo</h3>
+            <p>Superfícies REH do shapefile carregadas como camada independente.</p>
+            <button class="ghost" type="button" data-story-layer="reh-xp-sp">Abrir REH</button>
+          </article>
+          <article class="topic-card">
+            <h3>EAC D</h3>
+            <p>Espaços aéreos condicionados EAC D carregados como camada própria.</p>
+            <button class="ghost" type="button" data-story-layer="eac-d">Abrir EAC D</button>
+          </article>
+          <article class="topic-card">
+            <h3>EAC P</h3>
+            <p>Espaços aéreos condicionados EAC P carregados como camada própria.</p>
+            <button class="ghost" type="button" data-story-layer="eac-p">Abrir EAC P</button>
           </article>
           <article class="topic-card">
             <h3>Cenário 1</h3>

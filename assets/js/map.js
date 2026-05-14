@@ -19,6 +19,7 @@
   );
   let selectedLayerId = "zonas-protecao";
   let currentFilter = "all";
+  let activeBaseLayerId = "light";
 
   const map = L.map("map", {
     zoomControl: false,
@@ -34,7 +35,7 @@
       attribution:
         '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }
-  ).addTo(map);
+  );
 
   const osmBase = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -49,21 +50,29 @@
     }
   );
 
-  L.control.layers(
-    {
-      "Base clara": lightBase,
-      OpenStreetMap: osmBase,
-      "Satélite": satelliteBase
+  const baseLayers = {
+    light: {
+      label: "clara",
+      layer: lightBase
     },
-    {},
-    { position: "topright" }
-  ).addTo(map);
+    osm: {
+      label: "OSM",
+      layer: osmBase
+    },
+    satellite: {
+      label: "satélite",
+      layer: satelliteBase
+    }
+  };
+
+  lightBase.addTo(map);
 
   const categoryLabels = {
     all: "Todas",
     ambiente: "Ambiente",
     fase1: "Fase I",
     riscos: "Proteção",
+    superficies: "Superfícies",
     simulacao: "Simulação"
   };
 
@@ -74,6 +83,37 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function updateBaseControls() {
+    document.querySelectorAll("[data-base-layer]").forEach((button) => {
+      button.classList.toggle("is-active", button.dataset.baseLayer === activeBaseLayerId);
+    });
+
+    const selectedBaseName = document.getElementById("selected-base-name");
+
+    if (selectedBaseName) {
+      selectedBaseName.textContent = `Base: ${baseLayers[activeBaseLayerId].label}`;
+    }
+  }
+
+  function setBaseLayer(layerId) {
+    const nextBase = baseLayers[layerId];
+
+    if (!nextBase || activeBaseLayerId === layerId) {
+      return;
+    }
+
+    Object.values(baseLayers).forEach((base) => {
+      if (map.hasLayer(base.layer)) {
+        map.removeLayer(base.layer);
+      }
+    });
+
+    nextBase.layer.addTo(map);
+    activeBaseLayerId = layerId;
+    updateBaseControls();
+    window.setTimeout(() => map.invalidateSize(), 120);
   }
 
   function popupContent(layer, feature) {
@@ -939,10 +979,39 @@
     });
   });
 
+  document.querySelectorAll("[data-base-layer]").forEach((button) => {
+    button.addEventListener("click", () => setBaseLayer(button.dataset.baseLayer));
+  });
+
+  const mapStageElement = document.querySelector(".map-stage");
+  const fullscreenButton = document.getElementById("map-fullscreen");
+
+  fullscreenButton?.addEventListener("click", async () => {
+    try {
+      if (document.fullscreenElement === mapStageElement) {
+        await document.exitFullscreen();
+      } else {
+        await mapStageElement?.requestFullscreen();
+      }
+    } catch (error) {
+      console.warn(error);
+    }
+  });
+
+  document.addEventListener("fullscreenchange", () => {
+    if (fullscreenButton) {
+      fullscreenButton.textContent =
+        document.fullscreenElement === mapStageElement ? "Sair da tela cheia" : "Tela cheia";
+    }
+
+    window.setTimeout(() => map.invalidateSize(), 180);
+  });
+
   function updateStatus() {
     const activeCount = document.getElementById("active-count");
     const selectedName = document.getElementById("selected-layer-name");
     const loadState = document.getElementById("map-load-state");
+    const selectedBaseName = document.getElementById("selected-base-name");
     const selected = layers.find((layer) => layer.id === selectedLayerId);
 
     if (activeCount) {
@@ -958,6 +1027,10 @@
       loadState.textContent = selectedState?.message
         ? `Dados: ${selectedState.message}`
         : "Dados: aguardando";
+    }
+
+    if (selectedBaseName) {
+      selectedBaseName.textContent = `Base: ${baseLayers[activeBaseLayerId].label}`;
     }
   }
 
@@ -999,6 +1072,7 @@
   renderLayerList();
   renderDetails(layers.find((layer) => layer.id === selectedLayerId) || layers[0]);
   focusLayer(selectedLayerId);
+  updateBaseControls();
   updateStatus();
 
   window.addEventListener("hashchange", () => {

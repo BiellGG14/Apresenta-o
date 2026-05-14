@@ -9,6 +9,7 @@ import shutil
 import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
+from xml.sax.saxutils import escape
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -258,6 +259,151 @@ def count_placemarks(source_root: Path, source_file: str, bbox: tuple[float, flo
     return sum(1 for placemark in placemarks if in_bbox(coordinate_texts(placemark), bbox))
 
 
+def clean_property(value: object) -> str:
+    if value is None:
+        return ""
+
+    text = str(value).strip()
+
+    if not text or text.lower() == "nan":
+        return ""
+
+    return text
+
+
+def kml_coordinates(coords: object) -> str:
+    return " ".join(f"{float(lon):.8f},{float(lat):.8f},0" for lon, lat, *_ in coords)
+
+
+def kml_polygon(polygon: object) -> str:
+    outer = kml_coordinates(polygon.exterior.coords)
+    inner = []
+
+    for ring in polygon.interiors:
+        inner.append(
+            "<innerBoundaryIs><LinearRing>"
+            f"<coordinates>{kml_coordinates(ring.coords)}</coordinates>"
+            "</LinearRing></innerBoundaryIs>"
+        )
+
+    return (
+        "<Polygon>"
+        "<outerBoundaryIs><LinearRing>"
+        f"<coordinates>{outer}</coordinates>"
+        "</LinearRing></outerBoundaryIs>"
+        f"{''.join(inner)}"
+        "</Polygon>"
+    )
+
+
+def kml_geometry(geometry: object) -> str:
+    if geometry is None or geometry.is_empty:
+        return ""
+
+    geom_type = geometry.geom_type
+
+    if geom_type == "Polygon":
+        return kml_polygon(geometry)
+
+    if geom_type == "MultiPolygon":
+        return "<MultiGeometry>" + "".join(kml_polygon(item) for item in geometry.geoms) + "</MultiGeometry>"
+
+    if geom_type == "LineString":
+        return f"<LineString><coordinates>{kml_coordinates(geometry.coords)}</coordinates></LineString>"
+
+    if geom_type == "MultiLineString":
+        return (
+            "<MultiGeometry>"
+            + "".join(f"<LineString><coordinates>{kml_coordinates(item.coords)}</coordinates></LineString>" for item in geometry.geoms)
+            + "</MultiGeometry>"
+        )
+
+    if geom_type == "Point":
+        return f"<Point><coordinates>{geometry.x:.8f},{geometry.y:.8f},0</coordinates></Point>"
+
+    if geom_type == "GeometryCollection":
+        parts = "".join(kml_geometry(item) for item in geometry.geoms)
+        return f"<MultiGeometry>{parts}</MultiGeometry>" if parts else ""
+
+    return ""
+
+
+def kml_description(row: object) -> str:
+    labels = [
+        ("tipo", "Tipo"),
+        ("classe", "Classe"),
+        ("trecho", "Trecho"),
+        ("fca", "FCA"),
+        ("ats", "ATS"),
+        ("altmin", "Alt min"),
+        ("altmax", "Alt max"),
+        ("fixo_a_nom", "Fixo A"),
+        ("fixo_b_nom", "Fixo B"),
+        ("carta_nome", "Carta"),
+        ("efetivacao", "Efetivação"),
+        ("identifica", "Identificação"),
+    ]
+    lines = []
+
+    for key, label in labels:
+        value = clean_property(row.get(key))
+
+        if value:
+            lines.append(f"{label}: {value}")
+
+    return " | ".join(lines)
+
+
+def write_vector_kml(source_path: Path, target_path: Path, dataset: str) -> dict[str, object]:
+    import geopandas as gpd
+
+    gdf = gpd.read_file(source_path)
+
+    if gdf.crs is None:
+        gdf = gdf.set_crs(4326)
+
+    gdf = gdf.to_crs(4326)
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    placemarks = []
+
+    for _, row in gdf.iterrows():
+        geometry = kml_geometry(row.geometry)
+
+        if not geometry:
+            continue
+
+        name_parts = [clean_property(row.get("nome")), clean_property(row.get("trecho"))]
+        name = " ".join(part for part in name_parts if part) or dataset
+        description = kml_description(row)
+        placemarks.append(
+            "<Placemark>"
+            f"<name>{escape(name)}</name>"
+            f"<description>{escape(description)}</description>"
+            f"{geometry}"
+            "</Placemark>"
+        )
+
+    kml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<kml xmlns="http://www.opengis.net/kml/2.2">\n'
+        "<Document>\n"
+        f"<name>{escape(dataset)}</name>\n"
+        + "\n".join(placemarks)
+        + "\n</Document>\n</kml>\n"
+    )
+    target_path.write_text(kml, encoding="utf-8")
+
+    return {
+        "dataset": dataset,
+        "source": source_path.relative_to(ROOT).as_posix(),
+        "target": target_path.relative_to(ROOT).as_posix(),
+        "category": "superficies",
+        "format": "KML derivado",
+        "featureCount": len(placemarks),
+        "bounds": [round(float(value), 8) for value in gdf.total_bounds],
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Promove KML/KMZ úteis para consumo rastreável no mapa.")
     parser.add_argument("--source-root", default=str(DEFAULT_SOURCE))
@@ -320,6 +466,33 @@ def main() -> None:
             manifest_item["bbox"] = list(item["bbox"])
 
         items.append(manifest_item)
+
+    surface_files = [
+        {
+            "dataset": "REA São Paulo",
+            "source": ROOT / "data" / "geojson" / "sbsj" / "CV_REA_SP.gpkg",
+            "target": output_root / "superficies" / "rea_sp.kml",
+        },
+        {
+            "dataset": "REH XP São Paulo",
+            "source": ROOT / "data" / "geojson" / "sbsj" / "REH" / "CV_REH_XP_SAO_PAULO.shp",
+            "target": output_root / "superficies" / "reh_xp_sao_paulo.kml",
+        },
+        {
+            "dataset": "EAC D",
+            "source": ROOT / "data" / "geojson" / "sbsj" / "EAC" / "D" / "eac_d.shp",
+            "target": output_root / "superficies" / "eac_d.kml",
+        },
+        {
+            "dataset": "EAC P",
+            "source": ROOT / "data" / "geojson" / "sbsj" / "EAC" / "P" / "eac_p.shp",
+            "target": output_root / "superficies" / "eac_p.kml",
+        },
+    ]
+
+    for surface in surface_files:
+        if surface["source"].exists():
+            items.append(write_vector_kml(surface["source"], surface["target"], surface["dataset"]))
 
     manifest = {
         "generatedAt": dt.datetime.now().isoformat(timespec="seconds"),
