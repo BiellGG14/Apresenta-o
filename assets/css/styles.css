@@ -631,29 +631,6 @@ button:hover {
   border-radius: 4px;
 }
 
-.legend-line {
-  width: 18px;
-  height: 0;
-  border-top: 2px dashed rgba(17, 65, 104, 0.55);
-}
-
-.map-grid-label {
-  color: rgba(17, 42, 67, 0.78);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(17, 42, 67, 0.12);
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 0.68rem;
-  font-weight: 800;
-  line-height: 1;
-  padding: 0.18rem 0.28rem;
-  white-space: nowrap;
-}
-
-.map-grid-line {
-  stroke-dasharray: 5 7;
-}
-
 .leaflet-control-scale-line {
   border-color: rgba(17, 42, 67, 0.72);
   color: var(--navy);
